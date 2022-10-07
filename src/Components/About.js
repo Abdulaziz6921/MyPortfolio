@@ -2,7 +2,6 @@ import React from "react";
 import html from "../Images/html.png";
 import css from "../Images/CSS3.png";
 import sass from "../Images/Sass.png";
-import bootstrap from "../Images/bootstrap.png";
 import js from "../Images/js.png";
 import korean from "../Images/korean.png";
 import react from "../Images/react.png";
