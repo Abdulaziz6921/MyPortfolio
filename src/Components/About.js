@@ -11,7 +11,7 @@ function About() {
     title: 'text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]',
 
     text:
-      'text-[5cqi] font-[400] leading-[38px] tracking-[0px] text-justify px-0 md:px-[10px] md:text-justify md:text-[25px] md:font-[600] md:leading-[45px] md:tracking-[0.1px] lg:px-[14%]',
+      'text-[5cqi] font-[400] leading-[38px] tracking-[0px] text-justify px-[5px] md:px-[10px] md:text-justify md:text-[25px] md:font-[600] md:leading-[45px] md:tracking-[0.1px] lg:px-[14%]',
 
     span: 'text-secondary',
   }
