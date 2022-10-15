@@ -7,6 +7,7 @@ import { FaUser } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import selfie from "../Images/selfie.jpg";
+import logo from "../Images/logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,9 +19,10 @@ function Navbar() {
   const [open, setOpen] = useState(true);
 
   const stl = {
-    size: "relative bg-primary w-[95%] h-[60px] border-2 border-red-500 mx-auto flex justify-between items-center text-white overflow-hidden md:h-[80px] md:sticky top-0 right-0 left-0 md:z-20 lg:w-[90%] md:z-20",
+    size: "relative w-[95%] h-[60px] border-2 border-red-500 mx-auto flex justify-between items-center text-white overflow-hidden md:h-[80px] md:sticky top-0 right-0 left-0 md:z-20 lg:w-[90%] md:z-20",
 
-    name: "text-[25px] oblique font-mono font-bold md:text-[32px]",
+    name: "relative w-fit h-full flex ",
+    span: "ml-[2%]",
 
     main_links:
       "hidden md:flex justify-evenly items-center md:w-[50%] md:h-[55px] lg:w-[45%]  border-2 border-green-500  ",
@@ -65,7 +67,21 @@ function Navbar() {
         data-aos-duration="130000"
         data-aos-delay="400"
       >
-        Abdulaziz-<span title="Front-End Developer">F.E.D.</span>
+        <img
+          src={logo}
+          alt=""
+          className="absolute top-0 lef-0 -z-10 w-full h-full object-cover"
+        />
+        <div className="w-fut h-full flex justify-end  items-center text-[75px] italic font-cursive font-semibold">
+          <p>A</p>
+        </div>
+
+        <div className="font-mono italic pl-[3px] font-bold w-full h-full flex flex-col justify-end leading-[28px] text-[27px]">
+          <p>bdulaziz</p>
+          <p className="mb-[5px]" title="Front End Developer">
+            Web Developer
+          </p>
+        </div>
       </div>
       <ul className={stl.main_links}>
         <li

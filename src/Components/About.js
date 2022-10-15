@@ -12,10 +12,10 @@ import uzbek from "../Images/uzbek.png";
 
 function About() {
   let stl = {
-    size: "w-[95%] h-fit flex flex-col items-center justify-around mt-[50px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white",
+    size: "w-[95%] h-fit flex flex-col items-center justify-center mt-[50px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)] bg-[transparent]  md:bg-gradient-to-l from-[#780206] to-[#061161] rounded-[20px]",
 
     about:
-      "w-full h-fit flex flex-col justify-center items-center mt-[50px] border-secondary border-2 md:w-[95%] md:mt-[100px] lg:w-[75%]",
+      "w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%]  lg:w-[75%] my-[80px]",
 
     title: "text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]",
 
@@ -24,7 +24,7 @@ function About() {
     span: "text-secondary",
 
     skill:
-      "w-[95%] h-fit border-2 border-red-500 flex flex-col justify-between items-center mt-[100px] md:w-[75%] md:mt-[150px] lg:mt-[200px]",
+      " w-[95%] h-fit border-2 border-red-500 flex flex-col justify-between items-center mt-[100px] md:w-[75%] md:mt-[150px] lg:mt-[200px]",
 
     wrapper:
       "w-full h-fit flex justify-center items-center mt-[25px] md:mt-[40px] lg:mt-[60px]",
@@ -46,18 +46,20 @@ function About() {
   return (
     <>
       <div className={stl.size} id="about">
-        <div
-          className={stl.about}
-          data-aos="zoom-in"
-          data-aos-duration="100000"
-          data-aos-delay="300"
-        >
-          <h1 className={stl.title}>About me</h1>
+        <div className={stl.about}>
+          <h1
+            className={stl.title}
+            data-aos="zoom-in"
+            data-aos-duration="100000"
+            data-aos-delay="200"
+          >
+            About me
+          </h1>
           <p
             className={stl.text}
             data-aos="zoom-in"
             data-aos-duration="100000"
-            data-aos-delay="900"
+            data-aos-delay="400"
           >
             My full name is <span className={stl.span}>Abdulaziz Tojiboev</span>
             . I love programming and learning foreign languages. I am a
@@ -81,7 +83,8 @@ function About() {
             <span className={stl.span}> Russian</span> languages.
           </p>
         </div>
-
+      </div>
+      <div className={stl.size} id="about">
         <div class={stl.skill}>
           <h1
             class={stl.title}
