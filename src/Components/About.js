@@ -9,13 +9,18 @@ import russian from "../Images/russian.png";
 import tailwind from "../Images/tailwind.png";
 import us from "../Images/us.png";
 import uzbek from "../Images/uzbek.png";
+import camera from "../Images/camera.png";
+import { AiFillHome } from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 
 function About() {
   let stl = {
-    size: "w-[95%] h-fit flex flex-col items-center justify-center mt-[50px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)] bg-[transparent]  md:bg-gradient-to-l from-[#780206] to-[#061161] rounded-[20px]",
+    size: "relative w-[95%] h-fit flex flex-col items-center justify-center mt-[50px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)] bg-[transparent]  md:bg-gradient-to-l from-[#780206] to-[#061161] rounded-[20px]",
 
     about:
-      "w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%]  lg:w-[75%] my-[80px]",
+      "w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%]  lg:w-[75%] py-[32%] md:py-[4%]",
 
     title: "text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]",
 
@@ -24,7 +29,7 @@ function About() {
     span: "text-secondary",
 
     skill:
-      " w-[95%] h-fit border-2 border-red-500 flex flex-col justify-between items-center mt-[100px] md:w-[75%] md:mt-[150px] lg:mt-[200px]",
+      " w-[95%] h-fit border-2 border-red-500 flex flex-col justify-between items-center  md:w-[75%] md:mt-[150px] lg:mt-[200px] py-[32%] md:py-[1%]",
 
     wrapper:
       "w-full h-fit flex justify-center items-center mt-[25px] md:mt-[40px] lg:mt-[60px]",
@@ -42,6 +47,12 @@ function About() {
       "absolute mb-2 -right-4 bottom-full bg-black text-white rounded-sm font-semibold text-[10.5px] py-[1px] px-[6px] md:text-[13px]  md:px-[8px] md:rounded-[3px]",
 
     hook: "w-2 h-2 rotate-45 bg-black absolute -z-10 bottom-[-2px] left-1/2 -translate-x-1/2 rounded-sm md:w-3 md:h-3",
+    phone_top:
+      "flex justify-center absolute top-0 md:hidden w-full h-[40px] bg-black rounded-t-[20px]",
+    phone_bottom:
+      "flex justify-around items-center text-[20px] absolute bottom-0 md:hidden w-full h-[50px] bg-black rounded-b-[20px] ",
+    active:
+      "flex justify-center items-center bg-white/[0.3] rounded-full w-[40px] h-[40px]",
   };
   return (
     <>
@@ -82,9 +93,33 @@ function About() {
             <span className={stl.span}> English, Uzbek, some Korean</span> and
             <span className={stl.span}> Russian</span> languages.
           </p>
+          <div className={stl.phone_top}>
+            <img
+              src={camera}
+              alt=""
+              className="w-[30px] h-[30px] object-cover"
+            />
+          </div>
+          <div className={stl.phone_bottom}>
+            <a href="#home">
+              <AiFillHome />
+            </a>
+            <a href="#about" className={stl.active}>
+              {" "}
+              <FaUser />
+            </a>
+            <a href="#project">
+              {" "}
+              <FaProjectDiagram />
+            </a>
+            <a href="#contact">
+              <FaPhone />
+            </a>
+          </div>
         </div>
       </div>
-      <div className={stl.size} id="about">
+
+      <div className={stl.size}>
         <div class={stl.skill}>
           <h1
             class={stl.title}
@@ -309,6 +344,25 @@ function About() {
               </div>
             </div>
           </div>
+        </div>
+        <div className={stl.phone_top}>
+          <img src={camera} alt="" className="w-[30px] h-[30px] object-cover" />
+        </div>
+        <div className={stl.phone_bottom}>
+          <a href="#home">
+            <AiFillHome />
+          </a>
+          <a href="#about" className={stl.active}>
+            {" "}
+            <FaUser />
+          </a>
+          <a href="#project">
+            {" "}
+            <FaProjectDiagram />
+          </a>
+          <a href="#contact">
+            <FaPhone />
+          </a>
         </div>
       </div>
     </>

@@ -23,7 +23,7 @@ function Home() {
 
     intro: `${
       time ? "translate-x-[-1000px]" : "translate-x-[0]"
-    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] py-[32%] md:my-[7%]`,
+    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] py-[32%] md:py-[7%]`,
 
     hand: "animate-wiggle inline ml-[2%] w-[28px] h-[35px] lg:w-[40px] lg:h-[40px] lg:[4%]",
 
@@ -42,12 +42,18 @@ function Home() {
     } duration-[1.3s]`,
 
     photo_self: "w-full h-full object-cover rounded-full",
+    phone_top:
+      "flex justify-center absolute top-0 md:hidden w-full h-[40px] bg-black rounded-t-[20px]",
+    phone_bottom:
+      "flex justify-around items-center text-[20px] absolute bottom-0 md:hidden w-full h-[50px] bg-black rounded-b-[20px] ",
+    active:
+      "flex justify-center items-center bg-white/[0.3] rounded-full w-[40px] h-[40px]",
   };
 
   return (
     <div className={stl.size}>
-      <div className="flex justify-center absolute top-0 md:hidden w-full h-[40px] bg-black rounded-t-[20px]">
-        <img src={camera} alt="" className="w-[30px] h-[30px] " />
+      <div className={stl.phone_top}>
+        <img src={camera} alt="" className="w-[30px] h-[30px] object-cover" />
       </div>
 
       <div class={stl.intro}>
@@ -105,11 +111,8 @@ function Home() {
         <img src={selfie} alt="" className={stl.photo_self} />
       </div>
 
-      <div className="flex justify-around items-center text-[20px] absolute bottom-0 md:hidden w-full h-[50px] bg-black rounded-b-[20px] ">
-        <a
-          href="#home"
-          className="flex justify-center items-center bg-[blue] rounded-full w-[40px] h-[40px]"
-        >
+      <div className={stl.phone_bottom}>
+        <a href="#home" className={stl.active}>
           <AiFillHome />
         </a>
         <a href="#about">
