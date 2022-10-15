@@ -23,7 +23,7 @@ function Home() {
 
     intro: `${
       time ? "translate-x-[-1000px]" : "translate-x-[0]"
-    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] my-[35%] md:my-[7%]`,
+    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] my-[33%] md:my-[7%]`,
 
     hand: "animate-wiggle inline ml-[2%] w-[28px] h-[35px] lg:w-[40px] lg:h-[40px] lg:[4%]",
 
