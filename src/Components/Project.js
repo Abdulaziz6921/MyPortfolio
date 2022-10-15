@@ -2,11 +2,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import jimdo from "../Images/Jimdo.jpg";
+import jimdo2 from "../Images/Jimdo media.jpg";
+import camera from "../Images/camera.png";
+import { AiFillHome } from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 
 function Project() {
   const content = [
     {
       image: jimdo,
+      media_image: jimdo2,
       title: "Clone of Jimdo site",
       description: "Done with HTML and Tailwind",
       button: "Visit site",
@@ -93,18 +100,30 @@ function Project() {
       },
     ],
   };
+  const stl = {
+    phone_top:
+      "flex justify-center absolute top-0 md:hidden w-full h-[40px] bg-black rounded-t-[20px]",
+    phone_bottom:
+      "text-white flex justify-around items-center text-[20px] absolute bottom-0 md:hidden w-full h-[50px] bg-black rounded-b-[20px] ",
+    active:
+      "flex justify-center items-center bg-white/[0.3] rounded-full w-[40px] h-[40px]",
+  };
+
   return (
-    <div className="mt-[40px] mx-auto w-[95%] h-[100vh] flex flex-col justify-center items-center border-4 border-red-700">
+    <div className="relative mt-[70px] mx-auto w-[95%] h-fit flex flex-col justify-center items-center border-4 border-red-700">
       <h1
         id="project"
-        className="text-white text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]"
+        className="text-white text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px] mt-[40px]"
       >
         Projects
       </h1>
-      <div className="lg:w-[97%] w-[90%] mx-auto h-fit  border-4 border-red-700">
+      <div className="lg:w-[97%] w-[90%] mx-auto h-fit  border-4 border-red-700 pb-[20%]">
         <Slider {...settings}>
           {content.map((item, index) => (
-            <div key={index} className="h-[240px] border-2 border-blue-600">
+            <div
+              key={index}
+              className="md:h-[240px] h-[580px] border-2 border-blue-600"
+            >
               <div className="flex flex-col justify-center items-center relative m-auto h-full rounded-[30px] w-[95%]  border-red-400 border-4 hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden">
                 <h1
                   id="title"
@@ -114,15 +133,43 @@ function Project() {
                 </h1>
                 <h1 className="text-white">{item.description}</h1>
                 <h1 className="text-white">{item.button}</h1>
-                <img
-                  src={item.image}
-                  alt=""
-                  className="w-full h-full absolute top-0 -z-10 object-cover brightness-[60%]"
-                />
+                <div className="absolute top-0 -z-10 w-full h-full hidden md:block border-2 border-indingo-600">
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="w-full h-full object-cover brightness-[60%]"
+                  />
+                </div>
+                <div className="absolute top-0 -z-10 w-full h-full md:hidden  border-2 border-indingo-600">
+                  <img
+                    src={item.media_image}
+                    alt=""
+                    className="w-full h-full object-cover brightness-[60%]"
+                  />
+                </div>
               </div>
             </div>
           ))}
         </Slider>
+      </div>
+      <div className={stl.phone_top}>
+        <img src={camera} alt="" className="w-[30px] h-[30px] object-cover" />
+      </div>
+      <div className={stl.phone_bottom}>
+        <a href="#home">
+          <AiFillHome />
+        </a>
+        <a href="#about">
+          {" "}
+          <FaUser />
+        </a>
+        <a href="#project" className={stl.active}>
+          {" "}
+          <FaProjectDiagram />
+        </a>
+        <a href="#contact">
+          <FaPhone />
+        </a>
       </div>
     </div>
   );
