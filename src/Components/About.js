@@ -17,10 +17,10 @@ import { FaPhone } from "react-icons/fa";
 
 function About() {
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col items-center justify-center mt-[50px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)] bg-[transparent]  md:bg-gradient-to-l from-[#780206] to-[#061161] rounded-[20px]",
+    size: "relative w-[95%] h-fit flex flex-col items-center justify-center mt-[70px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)]  bg-gradient-to-l from-[#780206] to-[#061161] rounded-[20px]",
 
     about:
-      "w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%]  lg:w-[75%] py-[32%] md:py-[4%]",
+      "w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%]  lg:w-[75%] py-[25%] md:py-[4%]",
 
     title: "text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]",
 
@@ -29,7 +29,7 @@ function About() {
     span: "text-secondary",
 
     skill:
-      " w-[95%] h-fit border-2 border-red-500 flex flex-col justify-between items-center  md:w-[75%] md:mt-[150px] lg:mt-[200px] py-[32%] md:py-[1%]",
+      " w-full h-fit border-2 border-red-500 flex flex-col justify-between items-center md:w-[75%] py-[15%] md:py-[5%]",
 
     wrapper:
       "w-full h-fit flex justify-center items-center mt-[25px] md:mt-[40px] lg:mt-[60px]",
