@@ -5,9 +5,12 @@ import jimdo from "../Images/Jimdo.jpg";
 import jimdo2 from "../Images/Jimdo media.jpg";
 import movie from "../Images/123.png";
 import movie2 from "../Images/123 md.jpg";
+import clock from "../Images/clock.png";
+import clock2 from "../Images/clock md.jpg";
 import camera from "../Images/camera.png";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
+import bubble from "../Images/naval.png";
 
 function Project({ phone_stl }) {
   const content = [
@@ -26,14 +29,13 @@ function Project({ phone_stl }) {
       link: "https://123moviesclone.netlify.app/",
     },
     {
-      title: "Phasellus volutpat metus",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
-      button: "Buy now",
-      image: "https://i.imgur.com/DvmN8Hx.jpg",
-      user: "Bruno Vizovskyy",
-      userProfile: "https://i.imgur.com/4KeKvtH.png",
+      image: clock,
+      media_image: clock2,
+      title: "Light/Dark mode clock",
+      description: "Done with HTML, CSS and JS",
+      link: "https://modeclock.netlify.app/",
     },
+
     {
       title: "Ultricies Vulputate Mollis Fermentum Parturient",
       description:
@@ -115,13 +117,15 @@ function Project({ phone_stl }) {
       "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%]  border-red-400 border-4 hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden ",
 
     onHover:
-      "flex bg-black/[0.8] flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-700 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
+      "flex bg-transparent flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-700 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
 
-    title: " md:text-[60px] text-[35px] text-[#FFA200] font-bold text-center",
+    bubble: "w-full h-full  absolute z-[-1] object-contain md:object-cover",
+
+    title: " md:text-[53px] text-[35px] text-[#FFA200] font-bold text-center",
 
     description: "md:text-[30px] text-[20px] text-center",
 
-    btn: "w-[160px] h-[50px] hover:bg-gradient-to-l from-blue_like to-red_like rounded-full hover:duration-1000 text-white mt-[30px] bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse",
+    btn: "w-[160px] h-[50px] hover:bg-gradient-to-l from-[#61EEFE] to-[#D344FE] rounded-full hover:duration-1000 text-white mt-[30px] bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse hover:border-2 border-[#5DF8FE] hover:text-[#FFA200] text-[20px] font-semibold",
 
     prjct_img:
       "absolute top-0 -z-10 w-full h-full hidden md:block border-2 border-indingo-600",
@@ -143,11 +147,14 @@ function Project({ phone_stl }) {
             <div key={index} className={stl.box}>
               <div className={stl.inner_box}>
                 <div className={stl.onHover}>
+                  <img src={bubble} alt="" className={stl.bubble} />
                   <h1 id="title" className={stl.title}>
                     {item.title}
                   </h1>
                   <h1 className={stl.description}>{item.description}</h1>
-                  <button className={stl.btn}>Visit site</button>
+                  <a href={item.link}>
+                    <button className={stl.btn}>Visit site</button>
+                  </a>
                 </div>
 
                 <div className={stl.prjct_img}>

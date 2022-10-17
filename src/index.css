@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #1a3048;
   font-family: "Titillium Web", sans-serif;
   overflow-x: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 ::-webkit-scrollbar {
   width: 15px;
 }
+
 ::-webkit-scrollbar-track {
   background: #1a3048;
   margin-block: 5px;
@@ -21,18 +23,9 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #780206; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #061161,
-    #780206
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #061161,
-    #780206
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #780206;
+  background: -webkit-linear-gradient(to bottom, #061161, #780206);
+  background: linear-gradient(to bottom, #061161, #780206);
   border-radius: 10px;
 }
 
