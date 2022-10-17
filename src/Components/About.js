@@ -11,16 +11,14 @@ import us from "../Images/us.png";
 import uzbek from "../Images/uzbek.png";
 import camera from "../Images/camera.png";
 import { AiFillHome } from "react-icons/ai";
-import { FaUser } from "react-icons/fa";
-import { FaProjectDiagram } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaUser, FaProjectDiagram } from "react-icons/fa";
 
-function About() {
+function About({ phone_stl }) {
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col items-center justify-center mt-[70px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)]  bg-gradient-to-l from-[#780206] to-[#061161] rounded-[20px]",
+    size: "relative w-[95%] h-fit flex flex-col items-center justify-center mt-[70px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[10px_0_60px_20px_rgba(0,0,0,0.7)] bg-gradient-to-l from-red_like to-blue_like rounded-[20px]",
 
     about:
-      "w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%]  lg:w-[75%] py-[25%] md:py-[4%]",
+      "relative w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%] lg:w-[75%] py-[25%] md:py-[4%]",
 
     title: "text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]",
 
@@ -47,17 +45,41 @@ function About() {
       "absolute mb-2 -right-4 bottom-full bg-black text-white rounded-sm font-semibold text-[10.5px] py-[1px] px-[6px] md:text-[13px]  md:px-[8px] md:rounded-[3px]",
 
     hook: "w-2 h-2 rotate-45 bg-black absolute -z-10 bottom-[-2px] left-1/2 -translate-x-1/2 rounded-sm md:w-3 md:h-3",
-    phone_top:
-      "flex justify-center absolute top-0 md:hidden w-full h-[40px] bg-black rounded-t-[20px]",
-    phone_bottom:
-      "flex justify-around items-center text-[20px] absolute bottom-0 md:hidden w-full h-[50px] bg-black rounded-b-[20px] ",
-    active:
-      "flex justify-center items-center bg-white/[0.3] rounded-full w-[40px] h-[40px]",
+
+    tag_left: "hidden lg:block font-[200] text-[500px] absolute left-0",
+
+    tag_right: "hidden lg:block font-[200] text-[500px] absolute right-0",
   };
   return (
     <>
       <div className={stl.size} id="about">
+        <a
+          href="#home"
+          className={stl.tag_left}
+          data-aos="fade-down-right"
+          data-aos-duration="300000"
+          data-aos-delay="1500"
+        >
+          &#123;
+        </a>
+        <a
+          href="#skill"
+          className={stl.tag_right}
+          data-aos="fade-up-left"
+          data-aos-duration="300000"
+          data-aos-delay="1500"
+        >
+          &#125;
+        </a>
+
         <div className={stl.about}>
+          <div className={phone_stl.phone_top}>
+            <img
+              src={camera}
+              alt=""
+              className="w-[30px] h-[30px] object-cover"
+            />
+          </div>
           <h1
             className={stl.title}
             data-aos="zoom-in"
@@ -93,18 +115,12 @@ function About() {
             <span className={stl.span}> English, Uzbek, some Korean</span> and
             <span className={stl.span}> Russian</span> languages.
           </p>
-          <div className={stl.phone_top}>
-            <img
-              src={camera}
-              alt=""
-              className="w-[30px] h-[30px] object-cover"
-            />
-          </div>
-          <div className={stl.phone_bottom}>
+
+          <div className={phone_stl.phone_bottom}>
             <a href="#home">
               <AiFillHome />
             </a>
-            <a href="#about" className={stl.active}>
+            <a href="#about" className={phone_stl.active}>
               {" "}
               <FaUser />
             </a>
@@ -119,8 +135,35 @@ function About() {
         </div>
       </div>
 
-      <div className={stl.size}>
+      <div className={stl.size} id="skill">
+        <a
+          href="#about"
+          className={stl.tag_left}
+          data-aos="fade-down-right"
+          data-aos-duration="300000"
+          data-aos-delay="1500"
+        >
+          &#123;
+        </a>
+        <a
+          href="#project"
+          className={stl.tag_right}
+          data-aos="fade-up-left"
+          data-aos-duration="300000"
+          data-aos-delay="1500"
+        >
+          &#125;
+        </a>
+
         <div class={stl.skill}>
+          <div className={phone_stl.phone_top}>
+            <img
+              src={camera}
+              alt=""
+              className="w-[30px] h-[30px] object-cover"
+            />
+          </div>
+
           <h1
             class={stl.title}
             data-aos="zoom-in"
@@ -129,6 +172,7 @@ function About() {
           >
             Skills:
           </h1>
+
           <div class={stl.wrapper}>
             <div
               class={stl.wrap}
@@ -344,25 +388,23 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
-        <div className={stl.phone_top}>
-          <img src={camera} alt="" className="w-[30px] h-[30px] object-cover" />
-        </div>
-        <div className={stl.phone_bottom}>
-          <a href="#home">
-            <AiFillHome />
-          </a>
-          <a href="#about" className={stl.active}>
-            {" "}
-            <FaUser />
-          </a>
-          <a href="#project">
-            {" "}
-            <FaProjectDiagram />
-          </a>
-          <a href="#contact">
-            <FaPhone />
-          </a>
+
+          <div className={phone_stl.phone_bottom}>
+            <a href="#home">
+              <AiFillHome />
+            </a>
+            <a href="#about" className={phone_stl.active}>
+              {" "}
+              <FaUser />
+            </a>
+            <a href="#project">
+              {" "}
+              <FaProjectDiagram />
+            </a>
+            <a href="#contact">
+              <FaPhone />
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { BsArrowDown } from "react-icons/bs";
 import selfie from "../Images/selfie.jpg";
 import wave from "../Images/wave.svg";
 import camera from "../Images/camera.png";
+import { BsArrowDown } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
-import { FaUser } from "react-icons/fa";
-import { FaProjectDiagram } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
+import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
 
-function Home() {
+function Home({ phone_stl }) {
   const [time, setTime] = useState(true);
 
   const myFunc = () => {
@@ -19,7 +17,7 @@ function Home() {
   myFunc();
 
   let stl = {
-    size: "relative w-[95%] h-fit flex shadow-[0_25px_60px_20px_rgba(0,0,0,0.4)]   bg-gradient-to-l from-[#780206] to-[#061161] items-center justify-center  mt-[30px] mx-auto text-white font-[700] md:w-[90%] rounded-[20px]",
+    size: "relative w-[95%] h-fit flex shadow-[10px_0_60px_20px_rgba(0,0,0,0.8)] bg-gradient-to-l from-red_like to-blue_like items-center justify-center  mt-[30px] mx-auto text-white font-[700] md:w-[90%] rounded-[20px]",
 
     intro: `${
       time ? "translate-x-[-1000px]" : "translate-x-[0]"
@@ -32,29 +30,47 @@ function Home() {
     intro_p:
       "text-[18px] pr-[34%] leading-[22px] font-[600] md:text-[20px] lg:pr-[45%]",
 
-    btn: "w-[180px] h-[50px] mt-[40px] mb-[25px] relative tracking-[2px] font-[700] border-[1px] border-secondary rounded-[15px] bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors hover:border-0 before:absolute before:left-0 before:top-0 before:rounded-[15px] before:-z-10 before:h-full before:w-full  before:scale-x-0 before:bg-gradient-to-r from-[#6DA210] to-secondary before:transition-transform before:duration-700 before:content-[''] hover:text-white before:hover:scale-x-100",
+    btn: "w-[180px] h-[50px] mt-[40px] mb-[23px] relative tracking-[2px] font-[700] border-[1px] border-secondary rounded-[15px] bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors hover:border-0 before:absolute before:left-0 before:top-0 before:rounded-[15px] before:-z-10 before:h-full before:w-full  before:scale-x-0 before:bg-gradient-to-r from-[#6DA210] to-secondary before:transition-transform before:duration-700 before:content-[''] hover:text-white before:hover:scale-x-100",
 
     intro_arrow:
       "inline ml-[12px] mt-[15px] font-[700] text-[28px] animate-bounce",
 
-    photo: `hidden md:block md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] animate-photo border-2 border-red-600 ${
+    photo: `${
       time ? "translate-x-[1000px]" : "translate-x-[0]"
-    } duration-[1.3s]`,
+    } duration-[1.3s] hidden md:block md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] border-2 border-red-600`,
 
     photo_self: "w-full h-full object-cover rounded-full",
-    phone_top:
-      "flex justify-center absolute top-0 md:hidden w-full h-[40px] bg-black rounded-t-[20px]",
-    phone_bottom:
-      "flex justify-around items-center text-[20px] absolute bottom-0 md:hidden w-full h-[50px] bg-black rounded-b-[20px] ",
-    active:
-      "flex justify-center items-center bg-white/[0.3] rounded-full w-[40px] h-[40px]",
+
+    tag_left: "font-[200] text-[280px] hidden xl:block absolute  left-0",
+
+    tag_right: "font-[200] text-[280px] hidden xl:block absolute  right-0",
   };
 
   return (
-    <div className={stl.size}>
-      <div className={stl.phone_top}>
+    <div className={stl.size} id="home">
+      <div className={phone_stl.phone_top}>
         <img src={camera} alt="" className="w-[30px] h-[30px] object-cover" />
       </div>
+
+      <a
+        href="#home"
+        className={stl.tag_left}
+        data-aos="fade-down-right"
+        data-aos-duration="300000"
+        data-aos-delay="2500"
+      >
+        &#60;
+      </a>
+
+      <a
+        href="#about"
+        className={stl.tag_right}
+        data-aos="fade-up-left"
+        data-aos-duration="300000"
+        data-aos-delay="2500"
+      >
+        &#62;
+      </a>
 
       <div class={stl.intro}>
         <h1 className="text-[42px] md:text-[45px] lg:text-[50px]">
@@ -111,8 +127,8 @@ function Home() {
         <img src={selfie} alt="" className={stl.photo_self} />
       </div>
 
-      <div className={stl.phone_bottom}>
-        <a href="#home" className={stl.active}>
+      <div className={phone_stl.phone_bottom}>
+        <a href="#home" className={phone_stl.active}>
           <AiFillHome />
         </a>
         <a href="#about">

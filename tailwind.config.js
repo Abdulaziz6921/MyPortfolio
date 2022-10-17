@@ -2,24 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    textFillColor: (theme) => theme("borderColor"),
-    textStrokeColor: (theme) => theme("borderColor"),
-    textStrokeWidth: (theme) => theme("borderWidth"),
-    paintOrder: {
-      fsm: { paintOrder: "fill stroke markers" },
-      fms: { paintOrder: "fill markers stroke" },
-      sfm: { paintOrder: "stroke fill markers" },
-      smf: { paintOrder: "stroke markers fill" },
-      mfs: { paintOrder: "markers fill stroke" },
-      msf: { paintOrder: "markers stroke fill" },
-    },
     fontFamily: {
       mono: ['"Courier New"', "Courier", "monospace"],
     },
     extend: {
       colors: {
-        primary: "#6e6e6e",
+        primary: "#1a3048",
         secondary: "#bcfd4c",
+        blue_like: "#061161",
+        red_like: "#780206",
       },
 
       animation: {
