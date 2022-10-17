@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import jimdo from "../Images/Jimdo.jpg";
 import jimdo2 from "../Images/Jimdo media.jpg";
+import movie from "../Images/123.png";
+import movie2 from "../Images/123 md.jpg";
 import camera from "../Images/camera.png";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
@@ -14,16 +16,14 @@ function Project({ phone_stl }) {
       media_image: jimdo2,
       title: "Clone of Jimdo",
       description: "Done with HTML and Tailwind",
-      link: "",
+      link: "https://jimdoclone.netlify.app/",
     },
     {
-      title: "Tortor Dapibus Commodo Aenean Quam",
-      description:
-        "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
-      button: "Discover",
-      image: "https://i.imgur.com/DCdBXcq.jpg",
-      user: "Erich Behrens",
-      userProfile: "https://i.imgur.com/0Clfnu7.png",
+      image: movie,
+      media_image: movie2,
+      title: "Clone of 123movies",
+      description: "Done with HTML, CSS and JS",
+      link: "https://123moviesclone.netlify.app/",
     },
     {
       title: "Phasellus volutpat metus",
@@ -117,9 +117,9 @@ function Project({ phone_stl }) {
     onHover:
       "flex bg-black/[0.8] flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-700 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
 
-    title: " text-[60px] text-[#FFA200] font-bold ",
+    title: " md:text-[60px] text-[35px] text-[#FFA200] font-bold text-center",
 
-    description: "text-[30px]",
+    description: "md:text-[30px] text-[20px] text-center",
 
     btn: "w-[160px] h-[50px] hover:bg-gradient-to-l from-blue_like to-red_like rounded-full hover:duration-1000 text-white mt-[30px] bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse",
 

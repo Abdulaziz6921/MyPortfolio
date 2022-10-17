@@ -13,10 +13,10 @@ function Navbar() {
     AOS.init({ once: "true" });
   }, []);
 
-  const [open, setOpen] = useState(true);
+  let [open, setOpen] = useState(true);
 
   const stl = {
-    size: "bg-gradient-to-l from-red_like to-blue_like relative w-full h-[60px] border-2 border-red-500 mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20",
+    size: "bg-gradient-to-l from-red_like to-blue_like  w-full h-[60px] border-2 border-red-500 mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20",
 
     inner_size:
       "w-[95%] lg:w-[90%] h-full mx-auto flex justify-between items-center",
@@ -47,7 +47,7 @@ function Navbar() {
 
     right_slider: `${
       open ? "translate-x-[600px]" : "translate-x-[0px]"
-    } w-[50%] h-full bg-gradient-to-l from-red_like to-blue_like fixed right-0 top-0 z-20 rounded-l-[25px] duration-500 md:hidden`,
+    } w-[50%] h-full bg-gradient-to-l from-red_like to-blue_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-500 md:hidden`,
 
     arrow_icon:
       "mt-[10px] mb-[20px] ml-[5%] text-[25px] bg-blue_like rounded-[50%] hover:text-red_like hover:bg-white",
@@ -59,13 +59,17 @@ function Navbar() {
     li_collection: "w-full h-[25%] flex flex-col justify-between mt-[20px]",
 
     l_items:
-      "group w-[95%] h-[65px] flex items-center justify-center rounded-r-[14px] hover:bg-gradient-to-b from-red_like to-blue_like hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)] active:bg-gradient-to-b from-red_like to-blue_like",
+      "group w-[95%] h-[45px] flex items-center justify-center rounded-r-[14px] hover:bg-gradient-to-b from-red_like to-blue_like hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)] active:bg-gradient-to-b from-red_like to-blue_like",
 
     inner_li: "w-[135px] h-full flex justify-start items-center",
 
     l_items_a: "group-hover:text-secondary",
 
     l_items_icons: " text-[15px] mr-[10px] group-hover:text-secondary",
+
+    shadow: `${
+      open ? "hidden" : "block"
+    } w-full h-[100vh] border-red-600 border-2 bg-transparent relative top-0 z-[2]`,
   };
 
   return (
@@ -139,53 +143,56 @@ function Navbar() {
         >
           <GoThreeBars className={stl.bar} onClick={() => setOpen(!open)} />
         </div>
-        <div className={stl.right_slider}>
-          <BsArrowRightCircleFill
-            onClick={() => setOpen(true)}
-            className={stl.arrow_icon}
-          />
+      </div>
+      <div onClick={() => setOpen(true)} className={stl.shadow}></div>
+      <div className={stl.right_slider}>
+        <BsArrowRightCircleFill
+          onClick={() => setOpen(true)}
+          className={stl.arrow_icon}
+        />
 
-          <img src={selfie} alt="My selfie" className={stl.img} />
+        <img src={selfie} alt="My selfie" className={stl.img} />
 
-          <div>
-            <p className={stl.profession}>Front End Developer</p>
-          </div>
-          <ul className={stl.li_collection}>
+        <div>
+          <p className={stl.profession}>Front End Developer</p>
+        </div>
+        <ul className={stl.li_collection}>
+          <a href="#home" className={stl.l_items_a}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <AiFillHome className={stl.l_items_icons} />
-                <a href="#home" className={stl.l_items_a}>
-                  Home
-                </a>
+                Home
               </div>
             </li>
+          </a>
 
+          <a href="#about" className={stl.l_items_a}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaUser className={stl.l_items_icons} />
-                <a href="#about" className={stl.l_items_a}>
-                  About me
-                </a>
+                About me
               </div>
             </li>
+          </a>
+
+          <a href="#project" className={stl.l_items_a}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaProjectDiagram className={stl.l_items_icons} />
-                <a href="#project" className={stl.l_items_a}>
-                  Project
-                </a>
+                Project
               </div>
             </li>
+          </a>
+
+          <a href="#contact" className={stl.l_items_a}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaPhone className={stl.l_items_icons} />
-                <a href="#contact" className={stl.l_items_a}>
-                  Contact
-                </a>
+                Contact
               </div>
             </li>
-          </ul>
-        </div>
+          </a>
+        </ul>
       </div>
     </div>
   );
