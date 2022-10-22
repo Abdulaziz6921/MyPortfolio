@@ -7,9 +7,12 @@ import movie from "../Images/123.png";
 import movie2 from "../Images/123 md.jpg";
 import clock from "../Images/clock.png";
 import clock2 from "../Images/clock md.jpg";
+import shopper from "../Images/shopper.png";
+import shopper2 from "../Images/shopper md.jpg";
 import camera from "../Images/camera.png";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
+import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import bubble from "../Images/naval.png";
 
 function Project({ phone_stl }) {
@@ -35,6 +38,13 @@ function Project({ phone_stl }) {
       description: "Done with HTML, CSS and JS",
       link: "https://modeclock.netlify.app/",
     },
+    {
+      image: shopper,
+      media_image: shopper2,
+      title: "Clone of Shopper",
+      description: "Done with HTML and Sass",
+      link: "https://shopperclone.netlify.app/",
+    },
 
     {
       title: "Ultricies Vulputate Mollis Fermentum Parturient",
@@ -54,55 +64,14 @@ function Project({ phone_stl }) {
       user: "Erich Behrens",
       userProfile: "https://i.imgur.com/0Clfnu7.png",
     },
-    {
-      title: "volutpat Aenean metus",
-      description:
-        "quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentumconsectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
-      button: "Buy now",
-      image: "https://i.imgur.com/DvmN8Hx.jpg",
-      user: "Bruno Vizovskyy",
-      userProfile: "https://i.imgur.com/4KeKvtH.png",
-    },
   ];
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 1000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   const stl = {
+    arrowRight:
+      "top-0 bottom-0 my-auto text-[30px] bg-red-600 rounded-full text-white hover:text-red-600 hover:bg-white duration-500 absolute right-0",
+
+    arrowLeft:
+      "top-0 bottom-0 my-auto text-[30px] bg-red-600 rounded-full text-white hover:text-red-600 hover:bg-white duration-500 absolute right-0",
+
     size: "text-white relative mt-[70px] mx-auto w-[95%] md:w-[90%] h-fit flex flex-col justify-center items-center shadow-[10px_0_60px_20px_rgba(0,0,0,0.7)] bg-gradient-to-l from-red_like to-blue_like rounded-[20px]",
 
     header:
@@ -136,6 +105,57 @@ function Project({ phone_stl }) {
       "absolute top-0 -z-10 w-full h-full md:hidden  border-2 border-indingo-600",
   };
 
+  const SampleNextArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div className={className} onClick={onClick}>
+        <BsArrowRightCircle className={stl.arrowRight} />
+      </div>
+    );
+  };
+
+  const SamplePrevArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div className={className} onClick={onClick}>
+        <BsArrowLeftCircle className={stl.arrowLeft} />
+      </div>
+    );
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <div className={stl.size}>
       <h1 id="project" className={stl.header}>
@@ -152,7 +172,7 @@ function Project({ phone_stl }) {
                     {item.title}
                   </h1>
                   <h1 className={stl.description}>{item.description}</h1>
-                  <a href={item.link}>
+                  <a href={item.link} target="blank">
                     <button className={stl.btn}>Visit site</button>
                   </a>
                 </div>
