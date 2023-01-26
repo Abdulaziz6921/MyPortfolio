@@ -1,8 +1,12 @@
 import vector from "../Images/contactimage.png";
+import { FiLinkedin } from "react-icons/fi";
+import { AiFillPhone } from "react-icons/ai";
+import { BsTelegram } from "react-icons/bs";
+import { FaDiscord } from "react-icons/fa";
 
 function Contact() {
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col  items-center justify-center  my-[50px] mx-auto text-white font-[700] rounded-[20px] hover:shadow-[12px_0px_15px_10px_rgba(0,0,0,0.5)] duration-500 md:w-[90%] md:flex-row xl:w-[1340px] xxl-[1540px]  md:my-[8%] ",
+    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white font-[700] rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
 
     chat: "w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-[50%] md:h-[500px] lg:h-[650px] md:rounded-t-[0px] md:rounded-l-[20px] bg-white ",
 
@@ -12,10 +16,22 @@ function Contact() {
     img_self: "w-full h-full object-contain",
 
     contact:
-      "w-full h-fit flex flex-col justify-center rounded-b-[20px] py-[32%] md:w-[50%] md:h-[500px] lg:h-[650px] md:py-[5%] bg-dark_like md:rounded-b-[0px] md:rounded-r-[20px] border-[5px] border-white",
+      "relative w-full h-fit flex flex-col items-end rounded-b-[20px] py-[10%] md:w-[50%] md:h-[500px] lg:h-[650px] md:py-[5%] bg-dark_like md:rounded-b-[0px] md:rounded-r-[20px] border-[5px] border-white pr-[40px] lg:pr-[60px]",
 
-    h1: "text-[35px] text-right md:mr-[80px] mr-[40px] relative md:text-[40px] lg:text-[80px] tracking-[2px] md:tracking-[3px]",
+    h1: "text-[35px] relative md:text-[40px] lg:text-[80px] tracking-[2px] md:tracking-[3px]",
     line: "w-[50px] h-[2px] bg-white absolute right-[55px] top-[50%] md:w-[70px] md:right-[70px] lg:right-[130px] lg:w-[140px]",
+    soc_media:
+      "flex flex-wrap justify-around items-center w-[90%] h-fit py-[3%] bg-transparent mt-[50px] ",
+    sm1: "flex flex-col justify-center items-center w-[65px] h-[65px] mb-[15px] rounded-[22px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] text-[50px] md:text-[60px] hover:animate-bounce",
+
+    yCircle:
+      "w-[12px] h-[12px] md:h-[40px] md:w-[40px] bg-yellow-500 absolute top-[10px] left-[10px] rounded-full",
+
+    oCircle:
+      "w-[12px] h-[12px] md:h-[40px] md:w-[40px] bg-orange-500 absolute bottom-[30px] right-[120px] md:bottom-[50px] md:rounded-[10px] rotate-45 rounded-0",
+
+    gCircle:
+      "w-[12px] h-[12px] md:h-[20px] md:w-[20px] lg:h-[40px] lg:w-[40px] bg-gray-400 absolute top-[110px] right-[10px] md:bottom-[50px] md:rounded-full",
   };
 
   return (
@@ -29,11 +45,35 @@ function Contact() {
       </div>
 
       <div className={stl.contact}>
+        <div className={stl.yCircle}></div>
+        <div className={stl.oCircle}></div>
+        <div className={stl.gCircle}></div>
         <h1 className={stl.h1}>Contact</h1>
 
         <h1 className={stl.h1}>
           <div className={stl.line}></div> Me
         </h1>
+
+        <div className={stl.soc_media}>
+          <button className={stl.sm1} style={{ background: "green" }}>
+            <AiFillPhone className="animate-wiggle " />
+          </button>
+
+          <button className={stl.sm1} style={{ background: "white" }}>
+            <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
+          </button>
+
+          <button
+            className={stl.sm1}
+            style={{ background: "transparent", border: "2px solid white" }}
+          >
+            <FiLinkedin />
+          </button>
+
+          <button className={stl.sm1} style={{ background: "#586AEA" }}>
+            <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
+          </button>
+        </div>
 
         <div></div>
       </div>

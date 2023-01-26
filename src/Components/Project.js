@@ -45,23 +45,22 @@ function Project() {
   ];
   const stl = {
     arrowRight:
-      "top-0 bottom-0 my-auto text-[30px] bg-secondary rounded-full text-white hover:text-secondary hover:bg-white duration-500 absolute right-0",
+      "top-0 bottom-0 my-auto text-[30px] bg-white rounded-full text-secondary hover:text-white hover:bg-secondary duration-500 absolute right-0",
 
     arrowLeft:
-      "top-0 bottom-0 my-auto text-[30px] bg-secondary rounded-full text-white hover:text-secondary hover:bg-white duration-500 absolute right-0",
+      "top-0 bottom-0 my-auto text-[30px] bg-white rounded-full text-secondary hover:text-white hover:bg-secondary duration-500 absolute right-0",
 
     size: "text-white relative mt-[70px] w-full h-fit flex flex-col justify-center items-center bg-secondary rounded-[20px] md:my-[8%]",
 
     header:
       "text-white text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px] mt-[50px]",
 
-    container:
-      "lg:w-[80%] w-full md:w-[95%] mx-auto h-fit border-4 border-green-700 pb-[18%] md:pb-[8%]",
+    container: "lg:w-[80%] w-full md:w-[95%] mx-auto h-fit pb-[18%] md:pb-[8%]",
 
-    box: "md:h-[350px] h-[630px] border-2 border-blue-600",
+    box: "md:h-[350px] h-[630px]",
 
     inner_box:
-      "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%]  border-red-400 border-4 hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden ",
+      "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%] hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden ",
 
     onHover:
       "flex bg-transparent flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-500 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
@@ -75,13 +74,11 @@ function Project() {
 
     btn: "w-[160px] h-[50px] hover:bg-gradient-to-l from-[#61EEFE] to-[#D344FE] rounded-full hover:duration-1000 text-white mt-[30px] bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse hover:border-2 border-[#5DF8FE] hover:text-[#FFA200] text-[20px] font-semibold",
 
-    prjct_img:
-      "absolute top-0 -z-10 w-full h-full hidden md:block border-2 border-indingo-600",
+    prjct_img: "absolute top-0 -z-10 w-full h-full hidden md:block",
 
     img_self: "w-full h-full object-cover",
 
-    prjct_img_4_phone:
-      "absolute top-0 -z-10 w-full h-full md:hidden  border-2 border-indingo-600",
+    prjct_img_4_phone: "absolute top-0 -z-10 w-full h-full md:hidden",
   };
 
   const SampleNextArrow = (props) => {

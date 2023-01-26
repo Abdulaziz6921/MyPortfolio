@@ -16,7 +16,7 @@ function Navbar() {
   let [open, setOpen] = useState(true);
 
   const stl = {
-    size: "bg-dark_like w-full h-[60px] border-2 border-red-500 mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  xxl-[1540px]",
+    size: "bg-dark_like w-full h-[60px] mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  shadow-[0_0_120px_5px_rgba(0,0,0,0.7)]",
 
     inner_size:
       "w-[95%] lg:w-[90%] h-full mx-auto flex justify-between items-center",
@@ -34,38 +34,35 @@ function Navbar() {
       "font-mono italic pl-[3px] font-bold w-full h-full flex flex-col justify-end md:leading-[28px] leading-[24px] md:text-[27px] text-[23px]",
 
     main_links:
-      "hidden md:flex justify-evenly items-center md:w-[50%] md:h-[55px] lg:w-[45%] border-2 border-green-500  ",
+      "hidden md:flex justify-evenly items-center md:w-[50%] md:h-[55px] lg:w-[45%]",
 
     li: "w-[130px] h-full",
 
     li_a: "w-full h-full flex justify-center items-center font-[600] text-[20px] duration-400 hover:text-secondary hover:rounded-[8px] hover:bg-dark_like  hover:shadow-[0_9px_20px_3px_rgba(0,0,0,0.7)] hover:duration-300",
 
-    three_bar:
-      "w-[50px] flex justify-center items-center h-full border-2 border-green-700 md:hidden",
+    three_bar: "w-[50px] flex justify-center items-center h-full md:hidden",
 
     bar: "text-[42px]",
 
     right_slider: `${
       open ? "translate-x-[600px]" : "translate-x-[0px]"
-    } w-[50%] h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-500 md:hidden`,
+    } w-[50%] h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-500 md:hidden shadow-[0_19px_80px_20px_rgba(0,0,0,0.7)]`,
 
     arrow_icon:
       "mt-[10px] mb-[20px] ml-[5%] text-[25px] bg-transparent rounded-[50%] hover:text-secondary hover:bg-white duration-300 hover:duration-300",
 
-    img: "w-[140px] h-[140px] mt-[20px] mx-auto mb-[5px] rounded-full object-contain",
+    img: "w-[140px] h-[140px] mt-[20px] mx-auto mb-[5px] rounded-[25px] object-contain",
 
     profession: "text-center text-[17px] text-white font-[600]",
 
     li_collection: "w-full h-[25%] flex flex-col justify-between mt-[20px]",
 
     l_items:
-      "group w-[95%] h-[45px] flex items-center justify-center rounded-r-[14px] hover:bg-gray_like hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)]",
+      "group w-[95%] h-[45px] flex items-center justify-center rounded-r-[14px] hover:bg-secondary hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)]",
 
     inner_li: "w-[135px] h-full flex justify-start items-center",
 
-    l_items_a: "group-hover:text-secondary",
-
-    l_items_icons: " text-[15px] mr-[10px] group-hover:text-secondary",
+    l_items_icons: " text-[15px] mr-[10px] ",
 
     shadow: `${
       open ? "hidden" : "block"
@@ -157,41 +154,38 @@ function Navbar() {
           <p className={stl.profession}>Front End Developer</p>
         </div>
         <ul className={stl.li_collection}>
-          <li className={stl.l_items}>
-            <a href="#home" className={stl.l_items_a}>
+          <a href="#home" className={stl.l_items_a}>
+            <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <AiFillHome className={stl.l_items_icons} />
                 Home
               </div>
-            </a>
-          </li>
-
-          <li className={stl.l_items}>
-            <a href="#about" className={stl.l_items_a}>
+            </li>
+          </a>
+          <a href="#about" className={stl.l_items_a}>
+            <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaUser className={stl.l_items_icons} />
                 About me
               </div>
-            </a>
-          </li>
-
-          <li className={stl.l_items}>
-            <a href="#project" className={stl.l_items_a}>
+            </li>
+          </a>
+          <a href="#project" className={stl.l_items_a}>
+            <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaProjectDiagram className={stl.l_items_icons} />
                 Project
               </div>
-            </a>
-          </li>
-
-          <li className={stl.l_items}>
-            <a href="#contact" className={stl.l_items_a}>
+            </li>
+          </a>
+          <a href="#contact" className={stl.l_items_a}>
+            <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaPhone className={stl.l_items_icons} />
                 Contact
               </div>
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </div>
     </div>

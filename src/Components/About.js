@@ -13,10 +13,10 @@ import curvy from "../Images/garis.png";
 
 function About() {
   let stl = {
-    size: "relative w-full h-fit flex flex-col items-center justify-center mt-[70px] px-[3%] border-2 border-white md:mt-[0] xl:w-[100%] xxl-[1540px] text-white bg-secondary md:py-[8%] ",
+    size: "relative w-full h-fit flex flex-col items-center justify-center mt-[70px] px-[3%] md:mt-[0] xl:w-[100%] xxl-[1540px] text-white bg-secondary md:py-[8%] ",
 
     about:
-      "relative w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%] lg:w-[75%] py-[25%] md:py-[4%]",
+      "relative w-full h-fit flex flex-col justify-center items-center md:w-[95%] lg:w-[75%] py-[25%] md:py-[4%]",
 
     title: "text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]",
 
@@ -25,7 +25,7 @@ function About() {
     span: "text-dark_like",
 
     skill:
-      "bg-dark_like relative w-full h-fit border-2 border-red-500 flex flex-col justify-between items-center md:w-[70%] py-[15%] md:py-[5%]  rounded-[20px]",
+      "bg-dark_like relative w-full h-fit flex flex-col justify-between items-center md:w-[70%] py-[15%] md:py-[5%]  rounded-[20px]",
 
     curvedLine: "absolute bottom-0 left-0 object-cover w-full h-full",
 

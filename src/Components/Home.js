@@ -14,11 +14,11 @@ function Home() {
   myFunc();
 
   let stl = {
-    size: "relative px-[3%] w-full h-fit flex bg-dark_like items-center justify-center text-white font-[700]  md:py-[8%] md:px-0",
+    size: "relative px-[3%] w-full h-fit flex bg-dark_like items-center justify-center text-white font-[700] md:py-[8%] md:px-0",
 
     intro: `${
       time ? "translate-x-[-1000px]" : "translate-x-[0]"
-    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] py-[32%] md:py-[7%] `,
+    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0 lg:w-[42%] md:w-[55%]  md:mr-[20px] py-[32%] md:py-[7%] `,
 
     hand: "animate-wiggle inline ml-[2%] w-[28px] h-[35px] lg:w-[40px] lg:h-[40px] lg:[4%]",
 
@@ -34,7 +34,7 @@ function Home() {
 
     photo: `${
       time ? "translate-x-[1000px]" : "translate-x-[0]"
-    } duration-[1.3s] hidden md:block md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] border-2 border-red-600`,
+    } duration-[1.3s] hidden md:block md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px]`,
 
     photo_self: "w-full h-full object-cover rounded-full",
 
