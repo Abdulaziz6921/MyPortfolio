@@ -9,13 +9,11 @@ import russian from "../Images/russian.png";
 import tailwind from "../Images/tailwind.png";
 import us from "../Images/us.png";
 import uzbek from "../Images/uzbek.png";
-import camera from "../Images/camera.png";
-import { AiFillHome } from "react-icons/ai";
-import { FaPhone, FaUser, FaProjectDiagram } from "react-icons/fa";
+import curvy from "../Images/garis.png";
 
-function About({ phone_stl }) {
+function About() {
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col items-center justify-center mt-[70px] mx-auto border-2 border-white md:w-[90%] md:mt-[80px] text-white shadow-[10px_0_60px_20px_rgba(0,0,0,0.7)] bg-gradient-to-l from-red_like to-blue_like rounded-[20px]",
+    size: "relative w-full h-fit flex flex-col items-center justify-center mt-[70px] px-[3%] border-2 border-white md:mt-[0] xl:w-[100%] xxl-[1540px] text-white bg-secondary md:py-[8%] ",
 
     about:
       "relative w-full h-fit flex flex-col justify-center items-center  border-secondary border-2 md:w-[95%] lg:w-[75%] py-[25%] md:py-[4%]",
@@ -24,10 +22,12 @@ function About({ phone_stl }) {
 
     text: "text-[5cqi] font-[400] leading-[38px] tracking-[0px] text-justify px-[5px] md:px-[10px] md:text-justify md:text-[25px] md:font-[600] md:leading-[45px] md:tracking-[0.1px] lg:px-[14%]",
 
-    span: "text-secondary",
+    span: "text-dark_like",
 
     skill:
-      " w-full h-fit border-2 border-red-500 flex flex-col justify-between items-center md:w-[75%] py-[15%] md:py-[5%]",
+      "bg-dark_like relative w-full h-fit border-2 border-red-500 flex flex-col justify-between items-center md:w-[70%] py-[15%] md:py-[5%]  rounded-[20px]",
+
+    curvedLine: "absolute bottom-0 left-0 object-cover w-full h-full",
 
     wrapper:
       "w-full h-fit flex justify-center items-center mt-[25px] md:mt-[40px] lg:mt-[60px]",
@@ -53,6 +53,7 @@ function About({ phone_stl }) {
   return (
     <>
       <div className={stl.size} id="about">
+        <img src={curvy} alt="curvy lines" class={stl.curvedLine} />
         <a
           href="#home"
           className={stl.tag_left}
@@ -73,13 +74,6 @@ function About({ phone_stl }) {
         </a>
 
         <div className={stl.about}>
-          <div className={phone_stl.phone_top}>
-            <img
-              src={camera}
-              alt=""
-              className="w-[30px] h-[30px] object-cover"
-            />
-          </div>
           <h1
             className={stl.title}
             data-aos="zoom-in"
@@ -115,27 +109,14 @@ function About({ phone_stl }) {
             <span className={stl.span}> English, Uzbek, some Korean</span> and
             <span className={stl.span}> Russian</span> languages.
           </p>
-
-          <div className={phone_stl.phone_bottom}>
-            <a href="#home">
-              <AiFillHome />
-            </a>
-            <a href="#about" className={phone_stl.active}>
-              {" "}
-              <FaUser />
-            </a>
-            <a href="#project">
-              {" "}
-              <FaProjectDiagram />
-            </a>
-            <a href="#contact">
-              <FaPhone />
-            </a>
-          </div>
         </div>
       </div>
 
-      <div className={stl.size} id="skill">
+      <div
+        className={stl.size}
+        id="skill"
+        style={{ background: "#192E77", padding: "0" }}
+      >
         <a
           href="#about"
           className={stl.tag_left}
@@ -156,14 +137,6 @@ function About({ phone_stl }) {
         </a>
 
         <div class={stl.skill}>
-          <div className={phone_stl.phone_top}>
-            <img
-              src={camera}
-              alt=""
-              className="w-[30px] h-[30px] object-cover"
-            />
-          </div>
-
           <h1
             class={stl.title}
             data-aos="zoom-in"
@@ -387,23 +360,6 @@ function About({ phone_stl }) {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className={phone_stl.phone_bottom}>
-            <a href="#home">
-              <AiFillHome />
-            </a>
-            <a href="#about" className={phone_stl.active}>
-              {" "}
-              <FaUser />
-            </a>
-            <a href="#project">
-              {" "}
-              <FaProjectDiagram />
-            </a>
-            <a href="#contact">
-              <FaPhone />
-            </a>
           </div>
         </div>
       </div>

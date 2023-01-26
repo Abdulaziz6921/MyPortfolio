@@ -3,7 +3,7 @@ import { GoThreeBars } from "react-icons/go";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
-import selfie from "../Images/selfie.jpg";
+import selfie from "../Images/selfie.png";
 import logo from "../Images/logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +16,7 @@ function Navbar() {
   let [open, setOpen] = useState(true);
 
   const stl = {
-    size: "bg-gradient-to-l from-red_like to-blue_like  w-full h-[60px] border-2 border-red-500 mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20",
+    size: "bg-dark_like w-full h-[60px] border-2 border-red-500 mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  xxl-[1540px]",
 
     inner_size:
       "w-[95%] lg:w-[90%] h-full mx-auto flex justify-between items-center",
@@ -38,7 +38,7 @@ function Navbar() {
 
     li: "w-[130px] h-full",
 
-    li_a: "w-full h-full flex justify-center items-center font-[600] text-[20px] duration-400 hover:text-secondary hover:rounded-[8px] hover:bg-blue_like hover:shadow-[0_9px_20px_3px_rgba(0,0,0,0.7)] hover:duration-300",
+    li_a: "w-full h-full flex justify-center items-center font-[600] text-[20px] duration-400 hover:text-secondary hover:rounded-[8px] hover:bg-dark_like  hover:shadow-[0_9px_20px_3px_rgba(0,0,0,0.7)] hover:duration-300",
 
     three_bar:
       "w-[50px] flex justify-center items-center h-full border-2 border-green-700 md:hidden",
@@ -47,10 +47,10 @@ function Navbar() {
 
     right_slider: `${
       open ? "translate-x-[600px]" : "translate-x-[0px]"
-    } w-[50%] h-full bg-gradient-to-l from-red_like to-blue_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-500 md:hidden`,
+    } w-[50%] h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-500 md:hidden`,
 
     arrow_icon:
-      "mt-[10px] mb-[20px] ml-[5%] text-[25px] bg-blue_like rounded-[50%] hover:text-red_like hover:bg-white",
+      "mt-[10px] mb-[20px] ml-[5%] text-[25px] bg-transparent rounded-[50%] hover:text-secondary hover:bg-white duration-300 hover:duration-300",
 
     img: "w-[140px] h-[140px] mt-[20px] mx-auto mb-[5px] rounded-full object-contain",
 
@@ -59,7 +59,7 @@ function Navbar() {
     li_collection: "w-full h-[25%] flex flex-col justify-between mt-[20px]",
 
     l_items:
-      "group w-[95%] h-[45px] flex items-center justify-center rounded-r-[14px] hover:bg-gradient-to-b from-red_like to-blue_like hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)] active:bg-gradient-to-b from-red_like to-blue_like",
+      "group w-[95%] h-[45px] flex items-center justify-center rounded-r-[14px] hover:bg-gray_like hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)]",
 
     inner_li: "w-[135px] h-full flex justify-start items-center",
 
@@ -157,41 +157,41 @@ function Navbar() {
           <p className={stl.profession}>Front End Developer</p>
         </div>
         <ul className={stl.li_collection}>
-          <a href="#home" className={stl.l_items_a}>
-            <li className={stl.l_items}>
+          <li className={stl.l_items}>
+            <a href="#home" className={stl.l_items_a}>
               <div className={stl.inner_li}>
                 <AiFillHome className={stl.l_items_icons} />
                 Home
               </div>
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="#about" className={stl.l_items_a}>
-            <li className={stl.l_items}>
+          <li className={stl.l_items}>
+            <a href="#about" className={stl.l_items_a}>
               <div className={stl.inner_li}>
                 <FaUser className={stl.l_items_icons} />
                 About me
               </div>
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="#project" className={stl.l_items_a}>
-            <li className={stl.l_items}>
+          <li className={stl.l_items}>
+            <a href="#project" className={stl.l_items_a}>
               <div className={stl.inner_li}>
                 <FaProjectDiagram className={stl.l_items_icons} />
                 Project
               </div>
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="#contact" className={stl.l_items_a}>
-            <li className={stl.l_items}>
+          <li className={stl.l_items}>
+            <a href="#contact" className={stl.l_items_a}>
               <div className={stl.inner_li}>
                 <FaPhone className={stl.l_items_icons} />
                 Contact
               </div>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

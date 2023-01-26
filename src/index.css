@@ -7,25 +7,29 @@ html {
 }
 
 body {
-  background: #1a3048;
+  background: #ffa200;
   font-family: "Titillium Web", sans-serif;
   overflow-x: hidden;
 }
 
+::selection {
+  background: #ffa200;
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
+  background: #192e77;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a3048;
+  background: #192e77;
   margin-block: 5px;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #780206;
-  background: -webkit-linear-gradient(to bottom, #061161, #780206);
-  background: linear-gradient(to bottom, #061161, #780206);
+  background: #ffa200;
   border-radius: 10px;
 }
 
@@ -34,4 +38,20 @@ body {
     margin-block: 0px;
     border-radius: 0;
   }
+}
+
+.slick-dots li.slick-active button::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  color: #fff;
+  opacity: 1;
+}
+
+#contact {
+  border-radius: 16px;
+  background: #1a3048;
+  box-shadow: inset 27px 27px 37px #112030, inset -27px -27px 37px #234060;
 }

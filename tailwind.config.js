@@ -8,9 +8,9 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1a3048",
-        secondary: "#bcfd4c",
-        blue_like: "#061161",
-        red_like: "#780206",
+        secondary: "#FFA200",
+        dark_like: "#192E77",
+        gray_like: "#2A2931",
       },
 
       animation: {

@@ -9,13 +9,10 @@ import clock from "../Images/clock.png";
 import clock2 from "../Images/clock md.jpg";
 import shopper from "../Images/shopper.png";
 import shopper2 from "../Images/shopper md.jpg";
-import camera from "../Images/camera.png";
-import { AiFillHome } from "react-icons/ai";
-import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import bubble from "../Images/naval.png";
 
-function Project({ phone_stl }) {
+function Project() {
   const content = [
     {
       image: jimdo,
@@ -45,40 +42,21 @@ function Project({ phone_stl }) {
       description: "Done with HTML and Sass",
       link: "https://shopperclone.netlify.app/",
     },
-
-    {
-      title: "Ultricies Vulputate Mollis Fermentum Parturient",
-      description:
-        "Aenean eu leo quam. Pellentesque ornare sem lacinia  nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
-      button: "Read More",
-      image: "https://i.imgur.com/ZXBtVw7.jpg",
-      user: "Luan Gjokaj",
-      userProfile: "https://i.imgur.com/JSW6mEk.png",
-    },
-    {
-      title: "odo Aenean Quam Tortor Dapimodo Aenean Quam",
-      description:
-        "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis  purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
-      button: "Discover",
-      image: "https://i.imgur.com/DCdBXcq.jpg",
-      user: "Erich Behrens",
-      userProfile: "https://i.imgur.com/0Clfnu7.png",
-    },
   ];
   const stl = {
     arrowRight:
-      "top-0 bottom-0 my-auto text-[30px] bg-red-600 rounded-full text-white hover:text-red-600 hover:bg-white duration-500 absolute right-0",
+      "top-0 bottom-0 my-auto text-[30px] bg-secondary rounded-full text-white hover:text-secondary hover:bg-white duration-500 absolute right-0",
 
     arrowLeft:
-      "top-0 bottom-0 my-auto text-[30px] bg-red-600 rounded-full text-white hover:text-red-600 hover:bg-white duration-500 absolute right-0",
+      "top-0 bottom-0 my-auto text-[30px] bg-secondary rounded-full text-white hover:text-secondary hover:bg-white duration-500 absolute right-0",
 
-    size: "text-white relative mt-[70px] mx-auto w-[95%] md:w-[90%] h-fit flex flex-col justify-center items-center shadow-[10px_0_60px_20px_rgba(0,0,0,0.7)] bg-gradient-to-l from-red_like to-blue_like rounded-[20px]",
+    size: "text-white relative mt-[70px] w-full h-fit flex flex-col justify-center items-center bg-secondary rounded-[20px] md:my-[8%]",
 
     header:
       "text-white text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px] mt-[50px]",
 
     container:
-      "lg:w-[97%] w-full md:w-[95%] mx-auto h-fit border-4 border-red-700 pb-[18%]",
+      "lg:w-[80%] w-full md:w-[95%] mx-auto h-fit border-4 border-green-700 pb-[18%] md:pb-[8%]",
 
     box: "md:h-[350px] h-[630px] border-2 border-blue-600",
 
@@ -86,11 +64,12 @@ function Project({ phone_stl }) {
       "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%]  border-red-400 border-4 hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden ",
 
     onHover:
-      "flex bg-transparent flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-700 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
+      "flex bg-transparent flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-500 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
 
-    bubble: "w-full h-full  absolute z-[-1] object-contain md:object-cover",
+    bubble:
+      "w-full h-full  absolute z-[-1] object-contain md:object-cover bg-dark_like",
 
-    title: " md:text-[53px] text-[35px] text-[#FFA200] font-bold text-center",
+    title: " md:text-[53px] text-[35px] text-secondary font-bold text-center",
 
     description: "md:text-[30px] text-[20px] text-center",
 
@@ -125,12 +104,13 @@ function Project({ phone_stl }) {
 
   const settings = {
     dots: true,
+    dotsClass: "slick-dots slick-thumb",
     infinite: true,
     autoplay: true,
     autoplaySpeed: 4000,
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -195,30 +175,6 @@ function Project({ phone_stl }) {
             </div>
           ))}
         </Slider>
-      </div>
-
-      <div className={phone_stl.phone_top}>
-        <img
-          src={camera}
-          alt="camera"
-          className="w-[30px] h-[30px] object-cover"
-        />
-      </div>
-      <div className={phone_stl.phone_bottom}>
-        <a href="#home">
-          <AiFillHome />
-        </a>
-        <a href="#about">
-          {" "}
-          <FaUser />
-        </a>
-        <a href="#project" className={phone_stl.active}>
-          {" "}
-          <FaProjectDiagram />
-        </a>
-        <a href="#contact">
-          <FaPhone />
-        </a>
       </div>
     </div>
   );

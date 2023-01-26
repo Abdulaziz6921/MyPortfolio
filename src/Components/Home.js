@@ -1,12 +1,9 @@
 import { useState } from "react";
-import selfie from "../Images/selfie.jpg";
+import selfie from "../Images/selfie.png";
 import wave from "../Images/wave.svg";
-import camera from "../Images/camera.png";
 import { BsArrowDown } from "react-icons/bs";
-import { AiFillHome } from "react-icons/ai";
-import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
 
-function Home({ phone_stl }) {
+function Home() {
   const [time, setTime] = useState(true);
 
   const myFunc = () => {
@@ -17,11 +14,11 @@ function Home({ phone_stl }) {
   myFunc();
 
   let stl = {
-    size: "relative w-[95%] h-fit flex shadow-[10px_0_60px_20px_rgba(0,0,0,0.8)] bg-gradient-to-l from-red_like to-blue_like items-center justify-center  mt-[30px] mx-auto text-white font-[700] md:w-[90%] rounded-[20px]",
+    size: "relative px-[3%] w-full h-fit flex bg-dark_like items-center justify-center text-white font-[700]  md:py-[8%] md:px-0",
 
     intro: `${
       time ? "translate-x-[-1000px]" : "translate-x-[0]"
-    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] py-[32%] md:py-[7%]`,
+    } duration-[1.3s] w-full h-fit flex flex-col justify-center mr-0  border-2 border-secondary lg:w-[42%] md:w-[55%]  md:mr-[20px] py-[32%] md:py-[7%] `,
 
     hand: "animate-wiggle inline ml-[2%] w-[28px] h-[35px] lg:w-[40px] lg:h-[40px] lg:[4%]",
 
@@ -30,7 +27,7 @@ function Home({ phone_stl }) {
     intro_p:
       "text-[18px] pr-[34%] leading-[22px] font-[600] md:text-[20px] lg:pr-[45%]",
 
-    btn: "w-[180px] h-[50px] mt-[40px] mb-[23px] relative tracking-[2px] font-[700] border-[1px] border-secondary rounded-[15px] bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors hover:border-0 before:absolute before:left-0 before:top-0 before:rounded-[15px] before:-z-10 before:h-full before:w-full  before:scale-x-0 before:bg-gradient-to-r from-[#6DA210] to-secondary before:transition-transform before:duration-700 before:content-[''] hover:text-white before:hover:scale-x-100",
+    btn: "w-[180px] h-[50px] mt-[40px] mb-[23px] relative tracking-[2px] font-[700] border-[1px] border-secondary rounded-[15px] bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors hover:border-0 before:absolute before:left-0 before:top-0 before:rounded-[15px] before:-z-10 before:h-full before:w-full  before:scale-x-0 before:bg-secondary before:transition-transform before:duration-700 before:content-[''] hover:text-white before:hover:scale-x-100 hover:shadow-[12px_0px_15px_10px_rgba(0,0,0,0.5)] ",
 
     intro_arrow:
       "inline ml-[12px] mt-[15px] font-[700] text-[28px] animate-bounce",
@@ -41,17 +38,20 @@ function Home({ phone_stl }) {
 
     photo_self: "w-full h-full object-cover rounded-full",
 
-    tag_left: "font-[200] text-[280px] hidden xl:block absolute  left-0",
+    photo_div1: ` md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] border-[10px] border-[#FFA200] bg-dark_like rounded-full`,
 
-    tag_right: "font-[200] text-[280px] hidden xl:block absolute  right-0",
+    photo_div: `${
+      time ? "translate-x-[1000px]" : "translate-x-[0]"
+    } duration-[1.4s] hidden md:block md:w-[280px] md:h-[280px] lg:w-full lg:h-full absolute top-0 md:left-[20px] lg:left-[60px] xl:left-[45px] rounded-l-full bg-[#FFA200] z-[-10]`,
+
+    tag_left: "font-[200] text-[240px] hidden xl:block absolute left-0 ",
+
+    tag_right:
+      "font-[200] text-[240px] hidden xl:block absolute  right-0 z-[1]",
   };
 
   return (
     <div className={stl.size} id="home">
-      <div className={phone_stl.phone_top}>
-        <img src={camera} alt="" className="w-[30px] h-[30px] object-cover" />
-      </div>
-
       <a
         href="#home"
         className={stl.tag_left}
@@ -108,7 +108,7 @@ function Home({ phone_stl }) {
             data-aos-duration="300000"
             data-aos-delay="2700"
           >
-            Contact Me
+            <a href="#contact">Contact Me</a>
           </button>
         </div>
 
@@ -124,24 +124,11 @@ function Home({ phone_stl }) {
       </div>
 
       <div className={stl.photo}>
-        <img src={selfie} alt="" className={stl.photo_self} />
-      </div>
+        <div className={stl.photo_div1}>
+          <img src={selfie} alt="me" className={stl.photo_self} />
+        </div>
 
-      <div className={phone_stl.phone_bottom}>
-        <a href="#home" className={phone_stl.active}>
-          <AiFillHome />
-        </a>
-        <a href="#about">
-          {" "}
-          <FaUser />
-        </a>
-        <a href="#project">
-          {" "}
-          <FaProjectDiagram />
-        </a>
-        <a href="#contact">
-          <FaPhone />
-        </a>
+        <div className={stl.photo_div}></div>
       </div>
     </div>
   );
