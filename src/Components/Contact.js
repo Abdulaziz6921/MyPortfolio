@@ -28,9 +28,9 @@ function Contact() {
   }
 
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white font-[700] rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
+    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
 
-    chat: "w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-[50%] md:h-[500px] lg:h-[650px] md:rounded-t-[0px] md:rounded-l-[20px] bg-white ",
+    chat: "font-[700] w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-[50%] md:h-[500px] lg:h-[650px] md:rounded-t-[0px] md:rounded-l-[20px] bg-white ",
 
     header: "text-center text-[25px] md:text-[35px] lg:text-[45px]",
     btn: "w-[120px] h-[40px] my-[25px] tracking-[2px] font-[500] bg-dark_like text-white text-[14px] hover:text-secondary hover:duration-500",
@@ -38,13 +38,13 @@ function Contact() {
     img_self: "w-full h-full object-contain",
 
     contact:
-      "relative w-full h-fit flex flex-col items-end rounded-b-[20px] py-[10%] md:w-[50%] md:h-[500px] lg:h-[650px] md:py-[5%] bg-dark_like md:rounded-b-[0px] md:rounded-r-[20px] border-[5px] border-white pr-[40px] lg:pr-[60px]",
+      " relative w-full h-fit flex flex-col items-end rounded-b-[20px] py-[10%] md:w-[50%] md:h-[500px] lg:h-[650px] md:py-[5%] bg-dark_like md:rounded-b-[0px] md:rounded-r-[20px] border-[5px] border-white pr-[40px] lg:pr-[60px]",
 
-    h1: "text-[35px] relative md:text-[40px] lg:text-[80px] tracking-[2px] md:tracking-[3px]",
+    h1: "font-[800] text-[35px] relative md:text-[40px] lg:text-[80px] tracking-[2px] md:tracking-[3px]",
     line: "w-[50px] h-[2px] bg-white absolute right-[55px] top-[50%] md:w-[70px] md:right-[70px] lg:right-[130px] lg:w-[140px]",
     soc_media:
       "flex flex-wrap justify-around items-center w-[90%] h-fit py-[3%] bg-transparent mt-[50px] ",
-    sm1: "flex flex-col justify-center items-center w-[65px] h-[65px] mb-[15px] rounded-[22px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] text-[50px] md:text-[60px] hover:animate-bounce",
+    sm1: "flex flex-col justify-center items-center w-[65px] h-[65px] mt-[25px] rounded-[22px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] text-[50px] md:text-[60px] hover:animate-bounce",
 
     yCircle:
       "w-[12px] h-[12px] md:h-[40px] md:w-[40px] bg-yellow-500 absolute top-[10px] left-[10px] rounded-full",
@@ -82,29 +82,32 @@ function Contact() {
         <div className={stl.soc_media}>
           <a href="tel:+998913676921">
             <button className={stl.sm1} style={{ background: "green" }}>
-              <AiFillPhone className="animate-wiggle " />
+              <AiFillPhone className="animate-wiggle" />
             </button>
+            <p>+998913676921</p>
           </a>
           <a href="https://web.telegram.org/z/">
-            {" "}
             <button className={stl.sm1} style={{ background: "white" }}>
               <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
             </button>
+            <p>@Abdulaziz007</p>
           </a>
 
-          <a href="https://www.linkedin.com/in/abdulaziz-tojibayev-4350b9254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BTh84lZ6R3ypOYJ%2Blx7jZg%3D%3D">
+          <a href="https://www.linkedin.com/in/abdulaziz-tojibayev-4350b9254">
             <button
               className={stl.sm1}
               style={{ background: "transparent", border: "2px solid white" }}
             >
               <FiLinkedin />
             </button>
+            <p>abdulaziz-tojibayev</p>
           </a>
 
           <a href="https://discord.com/channels/@me">
             <button className={stl.sm1} style={{ background: "#586AEA" }}>
               <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
             </button>
+            <p>Abdulaziz#4906</p>
           </a>
         </div>
 

@@ -9,8 +9,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     AOS.init({ once: "true" });
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
   }, []);
 
   let [open, setOpen] = useState(true);
@@ -22,7 +30,9 @@ function Navbar() {
   };
 
   const stl = {
-    size: "bg-dark_like w-full h-[60px] mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  shadow-[0_0_120px_5px_rgba(0,0,0,0.7)]",
+    size: `bg-dark_like w-full h-[60px] mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  duration-700 ${
+      scrolled ? "shadow-[0_0_120px_5px_rgba(0,0,0,0.7)]" : "shadow-[0px]"
+    }`,
 
     inner_size:
       "w-[95%] lg:w-[90%] h-full mx-auto flex justify-between items-center",
