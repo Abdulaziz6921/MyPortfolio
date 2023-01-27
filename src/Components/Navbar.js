@@ -15,6 +15,12 @@ function Navbar() {
 
   let [open, setOpen] = useState(true);
 
+  const delaySlider = () => {
+    setTimeout(() => {
+      setOpen(true);
+    }, 500);
+  };
+
   const stl = {
     size: "bg-dark_like w-full h-[60px] mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  shadow-[0_0_120px_5px_rgba(0,0,0,0.7)]",
 
@@ -46,7 +52,7 @@ function Navbar() {
 
     right_slider: `${
       open ? "translate-x-[600px]" : "translate-x-[0px]"
-    } w-[50%] h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-500 md:hidden shadow-[0_19px_80px_20px_rgba(0,0,0,0.7)]`,
+    } w-[50%] h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-700 md:hidden shadow-[0_19px_80px_20px_rgba(0,0,0,0.7)]`,
 
     arrow_icon:
       "mt-[10px] mb-[20px] ml-[5%] text-[25px] bg-transparent rounded-[50%] hover:text-secondary hover:bg-white duration-300 hover:duration-300",
@@ -66,7 +72,7 @@ function Navbar() {
 
     shadow: `${
       open ? "hidden" : "block"
-    } w-full h-[100vh] border-red-600 border-2 bg-transparent relative top-0 z-[2]`,
+    } w-full h-[100vh] bg-transparent relative top-0 z-[2]`,
   };
 
   return (
@@ -154,7 +160,11 @@ function Navbar() {
           <p className={stl.profession}>Front End Developer</p>
         </div>
         <ul className={stl.li_collection}>
-          <a href="#home" className={stl.l_items_a}>
+          <a
+            href="#home"
+            className={stl.l_items_a}
+            onClick={() => delaySlider()}
+          >
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <AiFillHome className={stl.l_items_icons} />
@@ -162,7 +172,11 @@ function Navbar() {
               </div>
             </li>
           </a>
-          <a href="#about" className={stl.l_items_a}>
+          <a
+            href="#about"
+            className={stl.l_items_a}
+            onClick={() => delaySlider()}
+          >
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaUser className={stl.l_items_icons} />
@@ -170,7 +184,11 @@ function Navbar() {
               </div>
             </li>
           </a>
-          <a href="#project" className={stl.l_items_a}>
+          <a
+            href="#project"
+            className={stl.l_items_a}
+            onClick={() => delaySlider()}
+          >
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaProjectDiagram className={stl.l_items_icons} />
@@ -178,7 +196,11 @@ function Navbar() {
               </div>
             </li>
           </a>
-          <a href="#contact" className={stl.l_items_a}>
+          <a
+            href="#contact"
+            className={stl.l_items_a}
+            onClick={() => delaySlider()}
+          >
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaPhone className={stl.l_items_icons} />

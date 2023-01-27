@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import vector from "../Images/contactimage.png";
 import { FiLinkedin } from "react-icons/fi";
 import { AiFillPhone } from "react-icons/ai";
@@ -5,6 +6,27 @@ import { BsTelegram } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
 function Contact() {
+  const [copySuccessMessage, setCopySuccessMessage] = useState("");
+  const email = "abdulaziztojibayev6@gmail.com";
+
+  const [hide, setHide] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCopySuccessMessage("");
+      setHide(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [copySuccessMessage]);
+
+  function copyEmail() {
+    navigator.clipboard.writeText(email);
+    setCopySuccessMessage("Copied");
+    if (hide === true) {
+      setHide(false);
+    }
+  }
+
   let stl = {
     size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white font-[700] rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
 
@@ -38,7 +60,10 @@ function Contact() {
     <div className={stl.size} id="contact">
       <div className={stl.chat}>
         <h1 className={stl.header}>Let's have a quick chat</h1>
-        <button className={stl.btn}>Copy Email</button>
+        <button className={stl.btn}>
+          <p>{copySuccessMessage}</p>
+          {hide ? <p onClick={copyEmail}>Copy Email</p> : ""}
+        </button>
         <div className={stl.vector_Img}>
           <img src={vector} alt="vector_contact" className={stl.img_self} />
         </div>
@@ -55,20 +80,24 @@ function Contact() {
         </h1>
 
         <div className={stl.soc_media}>
-          <button className={stl.sm1} style={{ background: "green" }}>
-            <AiFillPhone className="animate-wiggle " />
-          </button>
+          <a href="tel:+998913676921">
+            <button className={stl.sm1} style={{ background: "green" }}>
+              <AiFillPhone className="animate-wiggle " />
+            </button>
+          </a>
 
           <button className={stl.sm1} style={{ background: "white" }}>
             <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
           </button>
 
-          <button
-            className={stl.sm1}
-            style={{ background: "transparent", border: "2px solid white" }}
-          >
-            <FiLinkedin />
-          </button>
+          <a href="https://www.linkedin.com/in/abdulaziz-tojibayev-4350b9254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BTh84lZ6R3ypOYJ%2Blx7jZg%3D%3D">
+            <button
+              className={stl.sm1}
+              style={{ background: "transparent", border: "2px solid white" }}
+            >
+              <FiLinkedin />
+            </button>
+          </a>
 
           <button className={stl.sm1} style={{ background: "#586AEA" }}>
             <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
