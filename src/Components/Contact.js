@@ -85,10 +85,12 @@ function Contact() {
               <AiFillPhone className="animate-wiggle " />
             </button>
           </a>
-
-          <button className={stl.sm1} style={{ background: "white" }}>
-            <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
-          </button>
+          <a href="https://web.telegram.org/z/">
+            {" "}
+            <button className={stl.sm1} style={{ background: "white" }}>
+              <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
+            </button>
+          </a>
 
           <a href="https://www.linkedin.com/in/abdulaziz-tojibayev-4350b9254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BTh84lZ6R3ypOYJ%2Blx7jZg%3D%3D">
             <button
@@ -99,9 +101,11 @@ function Contact() {
             </button>
           </a>
 
-          <button className={stl.sm1} style={{ background: "#586AEA" }}>
-            <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
-          </button>
+          <a href="https://discord.com/channels/@me">
+            <button className={stl.sm1} style={{ background: "#586AEA" }}>
+              <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
+            </button>
+          </a>
         </div>
 
         <div></div>
