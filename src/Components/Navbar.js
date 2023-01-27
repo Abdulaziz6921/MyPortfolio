@@ -26,7 +26,7 @@ function Navbar() {
   const delaySlider = () => {
     setTimeout(() => {
       setOpen(true);
-    }, 500);
+    }, 1000);
   };
 
   const stl = {
