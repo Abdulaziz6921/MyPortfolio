@@ -9,6 +9,8 @@ import clock from "../Images/clock.png";
 import clock2 from "../Images/clock md.jpg";
 import shopper from "../Images/shopper.png";
 import shopper2 from "../Images/shopper md.jpg";
+import bootstrap_Project from "../Images/dwbtstrap.png";
+import bootstrap_Project2 from "../Images/dwbtstrap_media.jpg";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import bubble from "../Images/naval.png";
 
@@ -42,6 +44,13 @@ function Project() {
       description: "Done with HTML and Sass",
       link: "https://shopperclone.netlify.app/",
     },
+    {
+      image: bootstrap_Project,
+      media_image: bootstrap_Project2,
+      title: "Clone of Figma site",
+      description: "Done with Html,Bootstrap and Scss",
+      link: "https://sitedonewithbootstrap.netlify.app/",
+    },
   ];
   const stl = {
     arrowRight:
@@ -66,7 +75,7 @@ function Project() {
       "flex bg-transparent flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-500 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
 
     bubble:
-      "w-full h-full  absolute z-[-1] object-contain md:object-cover bg-dark_like",
+      "w-full h-full  absolute z-[-1] object-contain md:object-cover bg-dark_like-400",
 
     title: " md:text-[53px] text-[35px] text-secondary font-bold text-center",
 

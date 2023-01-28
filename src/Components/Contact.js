@@ -28,7 +28,7 @@ function Contact() {
   }
 
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
+    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white  rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
 
     chat: "font-[700] w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-[50%] md:h-[500px] lg:h-[650px] md:rounded-t-[0px] md:rounded-l-[20px] bg-white ",
 
@@ -44,13 +44,16 @@ function Contact() {
     line: "w-[50px] h-[2px] bg-white absolute right-[55px] top-[50%] md:w-[70px] md:right-[70px] lg:right-[130px] lg:w-[140px]",
     soc_media:
       "flex flex-wrap justify-around items-center w-[90%] h-fit py-[3%] bg-transparent mt-[50px] ",
-    sm1: "flex flex-col justify-center items-center w-[65px] h-[65px] mt-[25px] rounded-[22px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] text-[50px] md:text-[60px] hover:animate-bounce",
+    sm_box:
+      "w-fit h-fit flex flex-col justify-center items-center text-[12px] md:text-[14px] lg:text-[16px]",
+    sm_btn:
+      "flex flex-col justify-center items-center w-[65px] h-[65px] mt-[25px] lg:mt-[15px] rounded-[22px] md:w-[80px] md:h-[80px] lg:w-[95px] lg:h-[95px] text-[50px] md:text-[60px] hover:animate-bounce",
 
     yCircle:
       "w-[12px] h-[12px] md:h-[40px] md:w-[40px] bg-yellow-500 absolute top-[10px] left-[10px] rounded-full",
 
     oCircle:
-      "w-[12px] h-[12px] md:h-[40px] md:w-[40px] bg-orange-500 absolute bottom-[30px] right-[120px] md:bottom-[50px] md:rounded-[10px] rotate-45 rounded-0",
+      "w-[12px] h-[12px] md:hidden lg:block md:h-[40px] md:w-[40px] bg-orange-500 absolute bottom-[30px] right-[120px] md:bottom-[50px] md:rounded-[10px] rotate-45 rounded-0",
 
     gCircle:
       "w-[12px] h-[12px] md:h-[20px] md:w-[20px] lg:h-[40px] lg:w-[40px] bg-gray-400 absolute top-[110px] right-[10px] md:bottom-[50px] md:rounded-full",
@@ -80,35 +83,44 @@ function Contact() {
         </h1>
 
         <div className={stl.soc_media}>
-          <a href="tel:+998913676921">
-            <button className={stl.sm1} style={{ background: "green" }}>
-              <AiFillPhone className="animate-wiggle" />
-            </button>
+          <div className={stl.sm_box}>
+            <a href="tel:+998913676921">
+              <button className={stl.sm_btn} style={{ background: "green" }}>
+                <AiFillPhone className="animate-wiggle" />
+              </button>
+            </a>
             <p>+998913676921</p>
-          </a>
-          <a href="https://web.telegram.org/z/">
-            <button className={stl.sm1} style={{ background: "white" }}>
-              <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
-            </button>
+          </div>
+
+          <div className={stl.sm_box}>
+            <a href="tg://resolve?domain=Abdulaziz007">
+              <button className={stl.sm_btn} style={{ background: "white" }}>
+                <BsTelegram className="text-[#239AD5] lg:text-[85px] md:text-[65px] text-[50px]" />
+              </button>
+            </a>
             <p>@Abdulaziz007</p>
-          </a>
+          </div>
 
-          <a href="https://www.linkedin.com/in/abdulaziz-tojibayev-4350b9254">
-            <button
-              className={stl.sm1}
-              style={{ background: "transparent", border: "2px solid white" }}
-            >
-              <FiLinkedin />
-            </button>
+          <div className={stl.sm_box}>
+            <a href="https://www.linkedin.com/in/abdulaziz-tojibayev-4350b9254">
+              <button
+                className={stl.sm_btn}
+                style={{ background: "transparent", border: "2px solid white" }}
+              >
+                <FiLinkedin />
+              </button>
+            </a>
             <p>abdulaziz-tojibayev</p>
-          </a>
+          </div>
 
-          <a href="https://discord.com/channels/@me">
-            <button className={stl.sm1} style={{ background: "#586AEA" }}>
-              <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
-            </button>
+          <div className={stl.sm_box}>
+            <a href="https://discord.com/channels/@me">
+              <button className={stl.sm_btn} style={{ background: "#586AEA" }}>
+                <FaDiscord className="text-white lg:text-[85px] md:text-[65px] text-[50px]" />
+              </button>
+            </a>
             <p>Abdulaziz#4906</p>
-          </a>
+          </div>
         </div>
 
         <div></div>
