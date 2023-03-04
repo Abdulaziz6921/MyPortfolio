@@ -11,6 +11,8 @@ import shopper from "../Images/shopper.png";
 import shopper2 from "../Images/shopper md.jpg";
 import bootstrap_Project from "../Images/dwbtstrap.png";
 import bootstrap_Project2 from "../Images/dwbtstrap_media.jpg";
+import todoList from "../Images/ToDo List.jpg";
+import todoList2 from "../Images/ToDo List md.jpg";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import bubble from "../Images/naval.png";
 
@@ -24,11 +26,11 @@ function Project() {
       link: "https://jimdoclone.netlify.app/",
     },
     {
-      image: movie,
-      media_image: movie2,
-      title: "Clone of 123movies",
+      image: todoList,
+      media_image: todoList2,
+      title: "To Do List",
       description: "Done with HTML, CSS and JS",
-      link: "https://123moviesclone.netlify.app/",
+      link: "https://todolistbyabdulaziz.netlify.app",
     },
     {
       image: clock,
@@ -50,6 +52,13 @@ function Project() {
       title: "Clone of Figma site",
       description: "Done with Html,Bootstrap and Scss",
       link: "https://sitedonewithbootstrap.netlify.app/",
+    },
+    {
+      image: movie,
+      media_image: movie2,
+      title: "Clone of 123movies",
+      description: "Done with HTML, CSS and JS",
+      link: "https://123moviesclone.netlify.app/",
     },
   ];
   const stl = {
