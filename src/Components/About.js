@@ -3,6 +3,7 @@ import html from "../Images/html.png";
 import css from "../Images/CSS3.png";
 import sass from "../Images/Sass.png";
 import js from "../Images/js.png";
+import bootstrap from "../Images/bootstrap.png";
 import korean from "../Images/korean.png";
 import react from "../Images/react.png";
 import russian from "../Images/russian.png";
@@ -215,6 +216,25 @@ function About() {
               class={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
+              data-aos-delay="200"
+            >
+              <img src={bootstrap} alt="bootstrap" className={stl.wrap_img} />
+
+              <div class={stl.bar}>
+                <div class={stl.back_filler}>
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[80%] bg-secondary">
+                    <span class={stl.percent}>
+                      <span class={stl.hook}></span>
+                      80%
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class={stl.wrap}
+              data-aos="fade-right"
+              data-aos-duration="100000"
               data-aos-delay="400"
             >
               <img src={tailwind} alt="tailwind" className={stl.wrap_img} />
@@ -230,7 +250,6 @@ function About() {
                 </div>
               </div>
             </div>
-
             <div
               class={stl.wrap}
               data-aos="fade-right"
@@ -250,7 +269,6 @@ function About() {
                 </div>
               </div>
             </div>
-
             <div
               class={stl.wrap}
               data-aos="fade-right"
@@ -261,10 +279,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[75%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[80%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      75%
+                      80%
                     </span>
                   </div>
                 </div>
