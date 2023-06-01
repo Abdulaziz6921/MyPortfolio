@@ -1,6 +1,4 @@
 import { useState } from "react";
-import selfie from "../Images/selfie.png";
-import wave from "../Images/wave.svg";
 import { BsArrowDown } from "react-icons/bs";
 
 function Home() {
@@ -76,7 +74,7 @@ function Home() {
         <h1 className="text-[42px] md:text-[45px] lg:text-[50px]">
           Hi, I'm <span className="text-secondary">Abdulaziz</span>
           <img
-            src={wave}
+            src="./Images/wave.svg"
             alt=""
             className={stl.hand}
             data-aos="zoom-in"
@@ -125,7 +123,7 @@ function Home() {
 
       <div className={stl.photo}>
         <div className={stl.photo_div1}>
-          <img src={selfie} alt="me" className={stl.photo_self} />
+          <img src="./Images/selfie.png" alt="me" className={stl.photo_self} />
         </div>
 
         <div className={stl.photo_div}></div>

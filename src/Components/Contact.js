@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import vector from "../Images/contactimage.png";
 import { FiLinkedin } from "react-icons/fi";
 import { AiFillPhone } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
@@ -28,7 +27,7 @@ function Contact() {
   }
 
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white  rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] ",
+    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white  rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] border-0 ",
 
     chat: "font-[700] w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-[50%] md:h-[500px] lg:h-[650px] md:rounded-t-[0px] md:rounded-l-[20px] bg-white ",
 
@@ -68,7 +67,11 @@ function Contact() {
           {hide ? <p onClick={copyEmail}>Copy Email</p> : ""}
         </button>
         <div className={stl.vector_Img}>
-          <img src={vector} alt="vector_contact" className={stl.img_self} />
+          <img
+            src="./Images/contactimage.png"
+            alt="vector_contact"
+            className={stl.img_self}
+          />
         </div>
       </div>
 

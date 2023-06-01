@@ -52,6 +52,5 @@ body {
 
 #contact {
   border-radius: 16px;
-  background: #1a3048;
-  box-shadow: inset 27px 27px 37px #112030, inset -27px -27px 37px #234060;
+  background: white;
 }

@@ -1,16 +1,4 @@
 import React from "react";
-import html from "../Images/html.png";
-import css from "../Images/CSS3.png";
-import sass from "../Images/Sass.png";
-import js from "../Images/js.png";
-import bootstrap from "../Images/bootstrap.png";
-import korean from "../Images/korean.png";
-import react from "../Images/react.png";
-import russian from "../Images/russian.png";
-import tailwind from "../Images/tailwind.png";
-import us from "../Images/us.png";
-import uzbek from "../Images/uzbek.png";
-import curvy from "../Images/garis.png";
 
 function About() {
   let stl = {
@@ -54,7 +42,11 @@ function About() {
   return (
     <>
       <div className={stl.size} id="about">
-        <img src={curvy} alt="curvy lines" class={stl.curvedLine} />
+        <img
+          src="./Images/garis.png"
+          alt="curvy lines"
+          class={stl.curvedLine}
+        />
         <a
           href="#home"
           className={stl.tag_left}
@@ -154,7 +146,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="400"
             >
-              <img src={html} alt="html" className={stl.wrap_img} />
+              <img
+                src="./Images/html.png"
+                alt="html"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -176,7 +172,7 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="400"
             >
-              <img src={css} alt="css" className={stl.wrap_img} />
+              <img src="./Images/CSS3.png" alt="css" className={stl.wrap_img} />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -196,7 +192,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="600"
             >
-              <img src={sass} alt="sass" className={stl.wrap_img} />
+              <img
+                src="./Images/Sass.png"
+                alt="sass"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -218,7 +218,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="200"
             >
-              <img src={bootstrap} alt="bootstrap" className={stl.wrap_img} />
+              <img
+                src="./Images/bootstrap.png"
+                alt="bootstrap"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -237,7 +241,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="400"
             >
-              <img src={tailwind} alt="tailwind" className={stl.wrap_img} />
+              <img
+                src="./Images/tailwind.png"
+                alt="tailwind"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -256,7 +264,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="600"
             >
-              <img src={react} alt="react" className={stl.wrap_img} />
+              <img
+                src="./Images/react.png"
+                alt="react"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -275,7 +287,7 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="800"
             >
-              <img src={js} alt="js" className={stl.wrap_img} />
+              <img src="./Images/js.png" alt="js" className={stl.wrap_img} />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -297,7 +309,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="400"
             >
-              <img src={uzbek} alt="uzbek language" className={stl.wrap_img} />
+              <img
+                src="./Images/uzbek.png"
+                alt="uzbek language"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -317,7 +333,11 @@ function About() {
               data-aos-duration="100000"
               data-aos-delay="600"
             >
-              <img src={us} alt="english language" className={stl.wrap_img} />
+              <img
+                src="./Images/us.png"
+                alt="english language"
+                className={stl.wrap_img}
+              />
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
@@ -338,7 +358,7 @@ function About() {
               data-aos-delay="800"
             >
               <img
-                src={russian}
+                src="./Images/russian.png"
                 alt="russian language"
                 className={stl.wrap_img}
               />
@@ -362,7 +382,7 @@ function About() {
               data-aos-delay="1000"
             >
               <img
-                src={korean}
+                src="./Images/korean.png"
                 alt="korean language"
                 className={stl.wrap_img}
               />

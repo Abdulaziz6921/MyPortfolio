@@ -3,8 +3,7 @@ import { GoThreeBars } from "react-icons/go";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser, FaProjectDiagram, FaPhone } from "react-icons/fa";
-import selfie from "../Images/selfie.png";
-import logo from "../Images/logo.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -94,7 +93,7 @@ function Navbar() {
           data-aos-duration="130000"
           data-aos-delay="400"
         >
-          <img src={logo} alt="" className={stl.logo} />
+          <img src="./Images/logo.png" alt="" className={stl.logo} />
           <div className={stl.A_letter}>
             <p>A</p>
           </div>
@@ -164,7 +163,7 @@ function Navbar() {
           className={stl.arrow_icon}
         />
 
-        <img src={selfie} alt="My selfie" className={stl.img} />
+        <img src="./Images/selfie.png" alt="My selfie" className={stl.img} />
 
         <div>
           <p className={stl.profession}>Front End Developer</p>
