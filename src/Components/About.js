@@ -82,25 +82,24 @@ function About() {
             data-aos-delay="400"
           >
             My full name is <span className={stl.span}>Abdulaziz Tojiboev</span>
-            . I love programming and learning foreign languages. I am a
-            <span className={stl.span}> web developer</span> having
-            specialization in
-            <span className={stl.span}> front end development</span>. I have
+            . I am a junior <span className={stl.span}>web developer</span> with
+            a specialization in
+            <span className={stl.span}> front-end development</span>. I have{" "}
+            <span className={stl.span}>completed a web development course</span>{" "}
+            at the "Algorithm" IT center, where I got all the theoretical
+            knowledge and some practice. Besides, I have{" "}
+            <span className={stl.span}>done self-study</span> and{" "}
+            <span className={stl.span}>completed some online courses</span> on
+            platforms like SoloLearn, W3Schools, and JavaScript.info to get
+            better acquainted with all necessary web technologies and techniques
+            for front-end development. So far, I have acquired{" "}
+            <span className={stl.span}>skills</span> in{" "}
             <span className={stl.span}>
-              {" "}
-              finished a web development course{" "}
-            </span>
-            and <span className={stl.span}>did self-study </span> during the
-            course to get familiar better with all necessary web technologies
-            and techniques to be a front end developer. I have Frontend Skills
-            in
-            <span className={stl.span}>
-              {" "}
-              Javascript, ReactJS, Css3/Sass, Tailwind/Bootstrap and Html5
-            </span>
-            . I speak
-            <span className={stl.span}> English, Uzbek, some Korean</span> and
-            <span className={stl.span}> Russian</span> languages.
+              Javascript, ReactJs, CSS3, SASS, Tailwind, Bootstrap
+            </span>{" "}
+            and <span className={stl.span}>HTML5</span>. I speak{" "}
+            <span className={stl.span}>English, Uzbek, Russian</span> and{" "}
+            <span className={stl.span}>some Korean</span> languages.
           </p>
         </div>
       </div>
@@ -176,10 +175,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[95%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[100%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      95%
+                      100%
                     </span>
                   </div>
                 </div>
@@ -200,10 +199,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      90%
+                      85%
                     </span>
                   </div>
                 </div>
@@ -226,10 +225,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[80%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      80%
+                      90%
                     </span>
                   </div>
                 </div>
@@ -249,10 +248,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      85%
+                      90%
                     </span>
                   </div>
                 </div>
@@ -291,10 +290,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[80%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      80%
+                      90%
                     </span>
                   </div>
                 </div>
@@ -341,10 +340,10 @@ function About() {
 
               <div class={stl.bar}>
                 <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
+                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
                     <span class={stl.percent}>
                       <span class={stl.hook}></span>
-                      90%
+                      85%
                     </span>
                   </div>
                 </div>
