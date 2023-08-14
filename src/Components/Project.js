@@ -55,6 +55,13 @@ function Project() {
       description: "Done with Tailwind and React",
       link: "https://crud-by-abdulaziz.netlify.app/",
     },
+    {
+      image: "./Images/emaar.png",
+      media_image: "./Images/emaar md.jpg",
+      title: "Emaar",
+      description: "Done with HTML and Tailwind",
+      link: "https://emaartowers.netlify.app/",
+    },
   ];
   const stl = {
     arrowRight:
