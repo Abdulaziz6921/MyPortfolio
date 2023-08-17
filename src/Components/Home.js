@@ -70,7 +70,7 @@ function Home() {
         &#62;
       </a>
 
-      <div class={stl.intro}>
+      <div className={stl.intro}>
         <h1 className="text-[42px] md:text-[45px] lg:text-[50px]">
           Hi, I'm <span className="text-secondary">Abdulaziz</span>
           <img

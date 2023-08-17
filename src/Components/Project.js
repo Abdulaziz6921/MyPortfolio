@@ -2,17 +2,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
-// import bubble from "../Images/naval.png";
 
 function Project() {
   const content = [
-    {
-      image: "./Images/Jimdo.jpg",
-      media_image: "./Images/Jimdo media.jpg",
-      title: "Clone of Jimdo",
-      description: "Done with HTML and Tailwind",
-      link: "https://jimdoclone.netlify.app/",
-    },
     {
       image: "./Images/ToDo List.jpg",
       media_image: "./Images/ToDo List md.jpg",
@@ -21,24 +13,24 @@ function Project() {
       link: "https://todolistbyabdulaziz.netlify.app",
     },
     {
-      image: "./Images/clock.png",
-      media_image: "./Images/clock md.jpg",
-      title: "Analog Clock",
-      description: "Done with HTML, CSS and JS",
-      link: "https://modeclock.netlify.app/",
+      image: "./Images/Jimdo.jpg",
+      media_image: "./Images/Jimdo media.jpg",
+      title: "Clone of Jimdo",
+      description: "Done with HTML and Tailwind",
+      link: "https://jimdoclone.netlify.app/",
     },
     {
-      image: "./Images/shopper.png",
-      media_image: "./Images/shopper md.jpg",
-      title: "Clone of Shopper",
-      description: "Done with HTML and Sass",
-      link: "https://shopperclone.netlify.app/",
+      image: "./Images/posts.png",
+      media_image: "./Images/posts md.jpg",
+      title: "Posts",
+      description: "Done with Vite, React and Tailwind",
+      link: "https://modeclock.netlify.app/",
     },
     {
       image: "./Images/dwbtstrap.png",
       media_image: "./Images/dwbtstrap_media.jpg",
       title: "Clone of Figma site",
-      description: "Done with Html,Bootstrap and Scss",
+      description: "Done with Bootstrap and Scss",
       link: "https://sitedonewithbootstrap.netlify.app/",
     },
     {
@@ -62,37 +54,45 @@ function Project() {
       description: "Done with HTML and Tailwind",
       link: "https://emaartowers.netlify.app/",
     },
+    {
+      image: "./Images/shopper.png",
+      media_image: "./Images/shopper md.jpg",
+      title: "Clone of Shopper",
+      description: "Done with HTML and Sass",
+      link: "https://shopperclone.netlify.app/",
+    },
   ];
+
   const stl = {
     arrowRight:
-      "top-0 bottom-0 my-auto text-[30px] bg-white rounded-full text-secondary hover:text-white hover:bg-secondary duration-500 absolute right-0",
+      "top-0 bottom-0 my-auto text-3xl bg-white rounded-full text-secondary hover:text-white hover:bg-secondary duration-500 absolute right-0",
 
     arrowLeft:
-      "top-0 bottom-0 my-auto text-[30px] bg-white rounded-full text-secondary hover:text-white hover:bg-secondary duration-500 absolute right-0",
+      "top-0 bottom-0 my-auto text-3xl bg-white rounded-full text-secondary hover:text-white hover:bg-secondary duration-500 absolute right-0",
 
     size: "text-white relative mt-[70px] w-full h-fit flex flex-col justify-center items-center bg-secondary rounded-[20px] md:my-[8%]",
 
     header:
       "text-white text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px] mt-[50px]",
 
-    container: "lg:w-[80%] w-full md:w-[95%] mx-auto h-fit pb-[18%] md:pb-[8%]",
+    container: "lg:w-4/5 w-full md:w-[95%] mx-auto h-fit pb-[18%] md:pb-[8%]",
 
     box: "md:h-[350px] h-[630px]",
 
     inner_box:
       "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%] hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden ",
 
-    onHover:
-      "flex bg-transparent flex-col justify-center items-center w-full h-0 absolute bottom-[100%] left-0 right-0 duration-500 overflow-hidden group-hover:bottom-0 group-hover:h-full group-hover:duration-700 z-10",
+    detail: `group-hover:bottom-0 group-hover:h-full group-hover:duration-700 h-0 bottom-[100%] flex bg-transparent flex-col justify-center items-center w-full absolute left-0 right-0 duration-500 overflow-hidden z-10`,
 
     bubble:
-      "w-full h-full  absolute z-[-1] object-contain md:object-cover bg-dark_like-400 md:w-[550px] md:h-[550px] lg:w-[470px] lg:h-[470px]",
+      "w-full h-full absolute z-[-1] object-contain md:object-cover bg-dark_like-400 md:w-[550px] md:h-[550px] lg:w-[470px] lg:h-[470px]",
 
-    title: " md:text-[53px] text-[35px] text-secondary font-bold text-center",
+    title:
+      " md:text-[43px] leading-loose text-4xl text-secondary font-bold text-center",
 
-    description: "md:text-[30px] text-[20px] text-center",
+    description: "md:text-2xl text-xl text-center",
 
-    btn: "w-[160px] h-[50px] hover:bg-gradient-to-l from-[#61EEFE] to-[#D344FE] rounded-full hover:duration-1000 text-white mt-[30px] bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse hover:border-2 border-[#5DF8FE] hover:text-[#FFA200] text-[20px] font-semibold",
+    btn: "w-40 h-[50px] hover:bg-gradient-to-l from-[#61EEFE] to-[#D344FE] rounded-full hover:duration-1000 text-white mt-8 bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse hover:border-2 border-[#5DF8FE] hover:text-[#FFA200] text-xl font-semibold",
 
     prjct_img: "absolute top-0 -z-10 w-full h-full hidden md:block",
 
@@ -124,7 +124,7 @@ function Project() {
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2500,
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
     speed: 500,
@@ -163,7 +163,7 @@ function Project() {
           {content.map((item, index) => (
             <div key={index} className={stl.box}>
               <div className={stl.inner_box}>
-                <div className={stl.onHover}>
+                <div className={stl.detail}>
                   <svg
                     version="1.1"
                     viewBox="0 0 600 600"
@@ -179,8 +179,8 @@ function Project() {
                         id="SvgjsLinearGradient1005"
                         gradientTransform="rotate(39, 0.5, 0.5)"
                       >
-                        <stop stop-color="hsl(184, 74%, 44%)" offset="0"></stop>
-                        <stop stop-color="hsl(332, 87%, 70%)" offset="1"></stop>
+                        <stop stopColor="hsl(184, 74%, 44%)" offset="0"></stop>
+                        <stop stopColor="hsl(332, 87%, 70%)" offset="1"></stop>
                       </linearGradient>
                     </defs>
                   </svg>

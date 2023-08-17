@@ -45,7 +45,7 @@ function About() {
         <img
           src="./Images/garis.png"
           alt="curvy lines"
-          class={stl.curvedLine}
+          className={stl.curvedLine}
         />
         <a
           href="#home"
@@ -128,9 +128,9 @@ function About() {
           &#125;
         </a>
 
-        <div class={stl.skill}>
+        <div className={stl.skill}>
           <h1
-            class={stl.title}
+            className={stl.title}
             data-aos="zoom-in"
             data-aos-duration="100000"
             data-aos-delay="300"
@@ -138,9 +138,9 @@ function About() {
             Skills:
           </h1>
 
-          <div class={stl.wrapper}>
+          <div className={stl.wrapper}>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="400"
@@ -151,11 +151,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-full bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-full bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       100%
                     </span>
                   </div>
@@ -164,20 +164,20 @@ function About() {
             </div>
           </div>
 
-          <div class={stl.wrapper}>
+          <div className={stl.wrapper}>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="400"
             >
               <img src="./Images/CSS3.png" alt="css" className={stl.wrap_img} />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[100%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[100%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       100%
                     </span>
                   </div>
@@ -186,7 +186,7 @@ function About() {
             </div>
 
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="600"
@@ -197,11 +197,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       85%
                     </span>
                   </div>
@@ -210,9 +210,9 @@ function About() {
             </div>
           </div>
 
-          <div class={stl.wrapper}>
+          <div className={stl.wrapper}>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="200"
@@ -223,11 +223,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       90%
                     </span>
                   </div>
@@ -235,7 +235,7 @@ function About() {
               </div>
             </div>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="400"
@@ -246,11 +246,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       90%
                     </span>
                   </div>
@@ -258,7 +258,7 @@ function About() {
               </div>
             </div>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="600"
@@ -269,11 +269,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[80%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[80%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       80%
                     </span>
                   </div>
@@ -281,18 +281,18 @@ function About() {
               </div>
             </div>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="800"
             >
               <img src="./Images/js.png" alt="js" className={stl.wrap_img} />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[90%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       90%
                     </span>
                   </div>
@@ -301,9 +301,9 @@ function About() {
             </div>
           </div>
 
-          <div class={stl.wrapper}>
+          <div className={stl.wrapper}>
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="400"
@@ -314,11 +314,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-full bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-full bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       100%
                     </span>
                   </div>
@@ -327,7 +327,7 @@ function About() {
             </div>
 
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="600"
@@ -338,11 +338,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[85%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       85%
                     </span>
                   </div>
@@ -351,7 +351,7 @@ function About() {
             </div>
 
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="800"
@@ -362,11 +362,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[70%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[70%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       70%
                     </span>
                   </div>
@@ -375,7 +375,7 @@ function About() {
             </div>
 
             <div
-              class={stl.wrap}
+              className={stl.wrap}
               data-aos="fade-right"
               data-aos-duration="100000"
               data-aos-delay="1000"
@@ -386,11 +386,11 @@ function About() {
                 className={stl.wrap_img}
               />
 
-              <div class={stl.bar}>
-                <div class={stl.back_filler}>
-                  <div class="absolute top-0 left-0 rounded-2xl h-full w-[50%] bg-secondary">
-                    <span class={stl.percent}>
-                      <span class={stl.hook}></span>
+              <div className={stl.bar}>
+                <div className={stl.back_filler}>
+                  <div className="absolute top-0 left-0 rounded-2xl h-full w-[50%] bg-secondary">
+                    <span className={stl.percent}>
+                      <span className={stl.hook}></span>
                       50%
                     </span>
                   </div>
