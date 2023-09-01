@@ -72,27 +72,26 @@ function Project() {
 
     size: "text-white relative mt-[70px] w-full h-fit flex flex-col justify-center items-center bg-secondary rounded-[20px] md:my-[8%]",
 
-    header:
-      "text-white text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px] mt-[50px]",
+    header: "text-white text-5xl font-bold pb-16 md:text-6xl lg:text-7xl mt-12",
 
     container: "lg:w-4/5 w-full md:w-[95%] mx-auto h-fit pb-[18%] md:pb-[8%]",
 
     box: "md:h-[350px] h-[630px]",
 
     inner_box:
-      "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%] hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-[0px] overflow-hidden ",
+      "group flex flex-col  justify-center items-center relative m-auto h-full rounded-[30px] w-[95%] hover:w-full duration-[2s] hover:duration-[2s] hover:rounded-none overflow-hidden ",
 
-    detail: `group-hover:bottom-0 group-hover:h-full group-hover:duration-700 h-0 bottom-[100%] flex bg-transparent flex-col justify-center items-center w-full absolute left-0 right-0 duration-500 overflow-hidden z-10`,
+    detail: `group-hover:bottom-0 group-hover:h-full group-hover:duration-700 h-0 bottom-full flex bg-transparent flex-col justify-center items-center w-full absolute left-0 right-0 duration-500 overflow-hidden z-10`,
 
     bubble:
       "w-full h-full absolute z-[-1] object-contain md:object-cover bg-dark_like-400 md:w-[550px] md:h-[550px] lg:w-[470px] lg:h-[470px]",
 
     title:
-      " md:text-[43px] leading-loose text-4xl text-secondary font-bold text-center",
+      "md:text-[43px] leading-loose text-4xl text-secondary font-bold text-center",
 
     description: "md:text-2xl text-xl text-center",
 
-    btn: "w-40 h-[50px] hover:bg-gradient-to-l from-[#61EEFE] to-[#D344FE] rounded-full hover:duration-1000 text-white mt-8 bg-[#FFA200] hover:text-white duration-1000 text-[18px]  hover:animate-pulse hover:border-2 border-[#5DF8FE] hover:text-[#FFA200] text-xl font-semibold",
+    btn: "w-40 h-12 hover:bg-gradient-to-l from-[#61EEFE] to-[#D344FE] rounded-full hover:duration-1000 text-white mt-8 bg-[#FFA200] hover:text-white duration-1000 text-[18px] hover:animate-pulse hover:border-2 border-[#5DF8FE] hover:text-[#FFA200] text-xl font-semibold",
 
     prjct_img: "absolute top-0 -z-10 w-full h-full hidden md:block",
 
@@ -192,7 +191,6 @@ function Project() {
                     <button className={stl.btn}>Visit site</button>
                   </a>
                 </div>
-
                 <div className={stl.prjct_img}>
                   <img
                     src={item.image}

@@ -29,7 +29,7 @@ function Navbar() {
   };
 
   const stl = {
-    size: `bg-dark_like w-full h-[60px] mx-auto text-white md:h-[80px] sticky top-0 right-0 left-0 z-20  duration-700 ${
+    size: `bg-dark_like w-full h-[60px] mx-auto text-white md:h-20 sticky top-0 right-0 left-0 z-20  duration-700 ${
       scrolled ? "shadow-[0_0_120px_5px_rgba(0,0,0,0.7)]" : "shadow-[0px]"
     }`,
 
@@ -51,33 +51,33 @@ function Navbar() {
     main_links:
       "hidden md:flex justify-evenly items-center md:w-[50%] md:h-[55px] lg:w-[45%]",
 
-    li: "w-[130px] h-full",
+    li: "w-32 h-full",
 
-    li_a: "w-full h-full flex justify-center items-center font-[600] text-[20px] duration-400 hover:text-secondary hover:rounded-[8px] hover:bg-dark_like  hover:shadow-[0_9px_20px_3px_rgba(0,0,0,0.7)] hover:duration-300",
+    li_a: "w-full h-full flex justify-center items-center font-semibold text-xl duration-400 hover:text-secondary hover:rounded-[8px] hover:bg-dark_like  hover:shadow-[0_9px_20px_3px_rgba(0,0,0,0.7)] hover:duration-300",
 
-    three_bar: "w-[50px] flex justify-center items-center h-full md:hidden",
+    three_bar: "w-12 flex justify-center items-center h-full md:hidden",
 
     bar: "text-[42px]",
 
     right_slider: `${
       open ? "translate-x-[600px]" : "translate-x-[0px]"
-    } w-[50%] h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-700 md:hidden shadow-[0_19px_80px_20px_rgba(0,0,0,0.7)]`,
+    } w-1/2 h-full bg-dark_like fixed right-0 top-0 z-[4] rounded-l-[25px] duration-700 md:hidden shadow-[0_19px_80px_20px_rgba(0,0,0,0.7)]`,
 
     arrow_icon:
-      "mt-[10px] mb-[20px] ml-[5%] text-[25px] bg-transparent rounded-[50%] hover:text-secondary hover:bg-white duration-300 hover:duration-300",
+      "mt-3 mb-5 ml-[5%] text-2xl bg-transparent rounded-[50%] hover:text-secondary hover:bg-white duration-300 hover:duration-300",
 
-    img: "w-[140px] h-[140px] mt-[20px] mx-auto mb-[5px] rounded-[25px] object-contain",
+    img: "w-36 h-36 mt-5 mx-auto mb-1 rounded-3xl object-contain",
 
-    profession: "text-center text-[17px] text-white font-[600]",
+    profession: "text-center text-base text-white font-semibold",
 
-    li_collection: "w-full h-[25%] flex flex-col justify-between mt-[20px]",
+    li_collection: "w-full h-1/4 flex flex-col justify-between mt-5",
 
     l_items:
-      "group w-[95%] h-[45px] flex items-center justify-center rounded-r-[14px] hover:bg-secondary hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)]",
+      "group w-[95%] h-11 flex items-center justify-center rounded-r-[14px] hover:bg-secondary hover:shadow-[10px_0_20px_5px_rgba(0,0,0,0.4)]",
 
     inner_li: "w-[135px] h-full flex justify-start items-center",
 
-    l_items_icons: " text-[15px] mr-[10px] ",
+    l_items_icons: "text-sm mr-3",
 
     shadow: `${
       open ? "hidden" : "block"
@@ -100,7 +100,7 @@ function Navbar() {
 
           <div className={stl.rest_letters}>
             <p>bdulaziz</p>
-            <p className="md:mb-[5px] mb-[0]" title="Front End Developer">
+            <p className="md:mb-1 mb-0" title="Front End Developer">
               Web Developer
             </p>
           </div>
@@ -169,11 +169,7 @@ function Navbar() {
           <p className={stl.profession}>Front End Developer</p>
         </div>
         <ul className={stl.li_collection}>
-          <a
-            href="#home"
-            className={stl.l_items_a}
-            onClick={() => delaySlider()}
-          >
+          <a href="#home" onClick={() => delaySlider()}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <AiFillHome className={stl.l_items_icons} />
@@ -181,11 +177,7 @@ function Navbar() {
               </div>
             </li>
           </a>
-          <a
-            href="#about"
-            className={stl.l_items_a}
-            onClick={() => delaySlider()}
-          >
+          <a href="#about" onClick={() => delaySlider()}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaUser className={stl.l_items_icons} />
@@ -193,11 +185,7 @@ function Navbar() {
               </div>
             </li>
           </a>
-          <a
-            href="#project"
-            className={stl.l_items_a}
-            onClick={() => delaySlider()}
-          >
+          <a href="#project" onClick={() => delaySlider()}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaProjectDiagram className={stl.l_items_icons} />
@@ -205,11 +193,7 @@ function Navbar() {
               </div>
             </li>
           </a>
-          <a
-            href="#contact"
-            className={stl.l_items_a}
-            onClick={() => delaySlider()}
-          >
+          <a href="#contact" onClick={() => delaySlider()}>
             <li className={stl.l_items}>
               <div className={stl.inner_li}>
                 <FaPhone className={stl.l_items_icons} />

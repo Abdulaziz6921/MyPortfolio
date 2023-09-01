@@ -2,36 +2,36 @@ import React from "react";
 
 function About() {
   let stl = {
-    size: "relative w-full h-fit flex flex-col items-center justify-center mt-[70px] px-[3%] md:mt-[0] xl:w-[100%] xxl-[1540px] text-white bg-secondary md:py-[8%] ",
+    size: "relative w-full h-fit flex flex-col items-center justify-center mt-[70px] px-[3%] md:mt-0 xl:w-full xxl-[1540px] text-white bg-secondary md:py-[8%] ",
 
     about:
-      "relative w-full h-fit flex flex-col justify-center items-center md:w-[95%] lg:w-[75%] py-[25%] md:py-[4%]",
+      "relative w-full h-fit flex flex-col justify-center items-center md:w-[95%] lg:w-3/4 py-[25%] md:py-[4%]",
 
-    title: "text-[50px] font-[700] mb-[20px] md:text-[60px] lg:text-[70px]",
+    title: "text-5xl font-bold mb-16 md:text-6xl lg:text-7xl",
 
-    text: "text-[5cqi] font-[400] leading-[38px] tracking-[0px] text-justify px-[5px] md:px-[10px] md:text-justify md:text-[25px] md:font-[600] md:leading-[45px] md:tracking-[0.1px] lg:px-[14%]",
+    text: "text-[5cqi] font-normal leading-10 tracking-[0px] text-justify px-1 md:px-3 md:text-justify md:text-2xl md:font-semibold md:leading-[45px] md:tracking-[0.1px] lg:px-[14%]",
 
     span: "text-dark_like",
 
     skill:
-      "bg-dark_like relative w-full h-fit flex flex-col justify-between items-center md:w-[70%] py-[15%] md:py-[5%]  rounded-[20px]",
+      "bg-dark_like relative w-full h-fit flex flex-col justify-between items-center md:w-[70%] py-[15%] md:py-[5%] rounded-[20px]",
 
     curvedLine: "absolute bottom-0 left-0 object-cover w-full h-full",
 
     wrapper:
-      "w-full h-fit flex justify-center items-center mt-[25px] md:mt-[40px] lg:mt-[60px]",
+      "w-full h-fit flex justify-center items-center mt-6 md:mt-10 lg:mt-[60px]",
 
     wrap: "mx-1 w-1/4 h-fit flex flex-col justify-between items-center lg:w-1/3",
 
     wrap_img:
-      "w-[70px] h-[90px] object-contain md:w-[100px] md:h-[120px] lg:w-[160px] lg:h-[160px]",
+      "w-[70px] h-[90px] object-contain md:w-[100px] md:h-[120px] lg:w-40 lg:h-40",
 
-    bar: "mt-[20px] w-full h-[12px] md:mt-[30px] md:w-[120px] lg:w-[160px] ",
+    bar: "mt-5 w-full h-[12px] md:mt-7 md:w-[120px] lg:w-40",
 
     back_filler: "w-full h-[10px] relative bg-white rounded-2xl",
 
     percent:
-      "absolute mb-2 -right-4 bottom-full bg-black text-white rounded-sm font-semibold text-[10.5px] py-[1px] px-[6px] md:text-[13px]  md:px-[8px] md:rounded-[3px]",
+      "absolute mb-2 -right-4 bottom-full bg-black text-white rounded-sm font-semibold text-[10.5px] py-[1px] px-[6px] md:text-[13px] md:px-2 md:rounded-[3px]",
 
     hook: "w-2 h-2 rotate-45 bg-black absolute -z-10 bottom-[-2px] left-1/2 -translate-x-1/2 rounded-sm md:w-3 md:h-3",
 

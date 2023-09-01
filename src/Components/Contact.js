@@ -27,35 +27,28 @@ function Contact() {
   }
 
   let stl = {
-    size: "relative w-[95%] h-fit flex flex-col my-[50px] mx-auto text-white  rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] border-0 ",
-
-    chat: "font-[700] w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-[50%] md:h-[500px] lg:h-[650px] md:rounded-t-[0px] md:rounded-l-[20px] bg-white ",
-
-    header: "text-center text-[25px] md:text-[35px] lg:text-[45px]",
-    btn: "w-[120px] h-[40px] my-[25px] tracking-[2px] font-[500] bg-dark_like text-white text-[14px] hover:text-secondary hover:duration-500",
-    vector_Img: "w-[60%] h-[60%]",
+    size: "relative w-[95%] h-fit flex flex-col my-12 mx-auto text-white  rounded-[20px] md:w-[90%] md:flex-row md:my-[8%] border-0 ",
+    chat: "font-bold w-full h-fit flex flex-col justify-around items-center text-dark_like rounded-t-[20px] py-[10%] md:py-[5%] md:w-1/2 md:h-[500px] lg:h-[650px] md:rounded-t-none md:rounded-l-[20px] bg-white",
+    header: "text-center text-2xl md:text-4xl lg:text-5xl",
+    btn: "w-[120px] h-10 my-6 tracking-[2px] font-medium bg-dark_like text-white text-sm hover:text-secondary hover:duration-500",
+    vector_Img: "w-3/5 h-3/5",
     img_self: "w-full h-full object-contain",
-
     contact:
-      " relative w-full h-fit flex flex-col items-end rounded-b-[20px] py-[10%] md:w-[50%] md:h-[500px] lg:h-[650px] md:py-[5%] bg-dark_like md:rounded-b-[0px] md:rounded-r-[20px] border-[5px] border-white pr-[40px] lg:pr-[60px]",
-
-    h1: "font-[800] text-[35px] relative md:text-[40px] lg:text-[80px] tracking-[2px] md:tracking-[3px]",
-    line: "w-[50px] h-[2px] bg-white absolute right-[55px] top-[50%] md:w-[70px] md:right-[70px] lg:right-[130px] lg:w-[140px]",
+      "relative w-full h-fit flex flex-col items-end rounded-b-[20px] py-[10%] md:w-1/2 md:h-[500px] lg:h-[650px] md:py-[5%] bg-dark_like md:rounded-b-none md:rounded-r-[20px] border-[5px] border-white pr-10 lg:pr-[60px]",
+    h1: "font-extrabold text-4xl relative md:text-[40px] lg:text-[80px] tracking-[2px] md:tracking-[3px] leading-tight",
+    line: "w-[50px] h-[2px] bg-white absolute right-14 top-1/2 md:w-[70px] md:right-[70px] lg:right-32 lg:w-36",
     soc_media:
-      "flex flex-wrap justify-around items-center w-[90%] h-fit py-[3%] bg-transparent mt-[50px] ",
+      "flex flex-wrap justify-around items-center w-[90%] h-fit py-[3%] bg-transparent mt-12",
     sm_box:
-      "w-fit h-fit flex flex-col justify-center items-center text-[12px] md:text-[14px] lg:text-[16px]",
+      "w-fit h-fit flex flex-col justify-center items-center text-xs md:text-sm lg:text-base",
     sm_btn:
-      "flex flex-col justify-center items-center w-[65px] h-[65px] mt-[25px] lg:mt-[15px] rounded-[22px] md:w-[80px] md:h-[80px] lg:w-[95px] lg:h-[95px] text-[50px] md:text-[60px] hover:animate-bounce",
-
+      "flex flex-col justify-center items-center w-[65px] h-[65px] mt-[25px] lg:mt-[15px] rounded-[22px] md:w-20 md:h-20 lg:w-24 lg:h-24 text-5xl md:text-6xl hover:animate-bounce",
     yCircle:
-      "w-[12px] h-[12px] md:h-[40px] md:w-[40px] bg-yellow-500 absolute top-[10px] left-[10px] rounded-full",
-
+      "w-3 h-3 md:h-10 md:w-10 bg-yellow-500 absolute top-[10px] left-[10px] rounded-full",
     oCircle:
-      "w-[12px] h-[12px] md:hidden lg:block md:h-[40px] md:w-[40px] bg-orange-500 absolute bottom-[30px] right-[120px] md:bottom-[50px] md:rounded-[10px] rotate-45 rounded-0",
-
+      "w-3 h-3 md:hidden lg:block md:h-10 md:w-10 bg-orange-500 absolute bottom-[30px] right-[120px] md:bottom-[50px] md:rounded-[10px] rotate-45 rounded-0",
     gCircle:
-      "w-[12px] h-[12px] md:h-[20px] md:w-[20px] lg:h-[40px] lg:w-[40px] bg-gray-400 absolute top-[110px] right-[10px] md:bottom-[50px] md:rounded-full",
+      "w-3 h-3 md:h-5 md:w-5 lg:h-10 lg:w-10 bg-gray-400 absolute top-28 right-[10px] md:bottom-12 md:rounded-full",
   };
 
   return (
