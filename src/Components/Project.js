@@ -24,7 +24,7 @@ function Project() {
       media_image: "./Images/posts md.jpg",
       title: "Posts",
       description: "Done with Vite, React and Tailwind",
-      link: "https://modeclock.netlify.app/",
+      link: "https://projectofabdulaziz.netlify.app/",
     },
     {
       image: "./Images/dwbtstrap.png",
